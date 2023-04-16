@@ -36,3 +36,9 @@ p {
     margin: 0 auto;
     padding: 0 15px;
 }
+
+p:hover,
+p:focus {
+    color: black;
+    opacity: 0.75;
+}
