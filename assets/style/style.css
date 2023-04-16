@@ -54,6 +54,7 @@ p:focus {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    margin-right: 60px;
 }
 
 .header__logo {
@@ -63,6 +64,11 @@ p:focus {
 .header__navigation {
     flex-wrap: wrap;
     display: flex;
+}
+
+.header__menu {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .header__list {
@@ -87,7 +93,6 @@ p:focus {
     font-weight: 400;
     font-size: 19px;
     line-height: 24px;
-    text-transform: capitalize;
     color: #404040;
     text-decoration: none;
 }
@@ -99,6 +104,15 @@ p:focus {
     opacity: 0.75;
 }
 
+.header__right-part {
+    display: flex;
+    align-items: center;
+}
+
+.header__icon {
+    width: 50px;
+    height: 50px;
+}
 
 
 /* gamburger */
