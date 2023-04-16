@@ -37,6 +37,12 @@ p {
     padding: 0 15px;
 }
 
+link:hover,
+link:focus,
+link:active {
+    opacity: 0.75;
+}
+
 p:hover,
 p:focus {
     color: black;
@@ -50,10 +56,17 @@ p:focus {
     height: 60px;
 }
 
+.header__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .header__left-part {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    margin-right: 60px;
 }
 
 .header__logo {
@@ -66,7 +79,7 @@ p:focus {
 }
 
 .header__list {
-    display: flex;
+    display: inline;
     flex-wrap: wrap;
 }
 
@@ -81,13 +94,17 @@ p:focus {
     margin-right: 0;
 }
 
+.header__menu {
+    display: flex;
+}
+
 .header__link {
+    display: inline;
     font-family: 'Playfair Display', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 19px;
     line-height: 24px;
-    text-transform: capitalize;
     color: #404040;
     text-decoration: none;
 }
@@ -99,7 +116,16 @@ p:focus {
     opacity: 0.75;
 }
 
+.header__right-part {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
+.header__icon {
+    height: 50px;
+    width: 50px;
+}
 
 /* gamburger */
 
