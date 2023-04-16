@@ -238,6 +238,7 @@ p:focus {
 .header__left-part {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .header__logo {
@@ -245,6 +246,7 @@ p:focus {
 }
 
 .header__navigation {
+    flex-wrap: wrap;
     display: flex;
 }
 
@@ -265,9 +267,9 @@ p:focus {
 }
 
 .header__link {
-    font-family: "Poppins";
+    font-family: 'Playfair Display', serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 19px;
     line-height: 24px;
     text-transform: capitalize;
