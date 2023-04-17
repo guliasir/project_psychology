@@ -50,6 +50,13 @@ p:focus {
     display: flex;
     flex-wrap: wrap;
     height: 60px;
+    margin-bottom: 150px;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+
 }
 
 .header__left-part {
@@ -106,6 +113,7 @@ p:focus {
     opacity: 0.75;
 }
 
+
 .header__right-part {
     display: flex;
     align-items: center;
@@ -120,7 +128,7 @@ p:focus {
 /* gamburger */
 
 @media screen and (min-width: 903px) {
-    .hambutger-menu {
+    .hamburger-menu {
         display: none;
     }
 }
@@ -225,8 +233,51 @@ p:focus {
     flex-wrap: wrap;
 }
 
+.hero__left-part {
+    margin-right: 50px;
+}
+
 .hero__image {
+    margin-left: 0px;
     max-width: 800px;
+}
+
+.hero__right-part {
+    display: block;
+    max-width: 400px;
+}
+
+.hero__title {
+    margin-top: 400px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 90px;
+    line-height: 28px;
+    font-family: 'Playfair Display', serif;
+    color: #383737;
+    margin-bottom: 500px;
+}
+
+.hero__title:hover {
+    opacity: 0.90;
+    color: black;
+}
+
+.hero__quote {
+    height: 170px;
+    max-width: 400px;
+    background-color: #5e5e5e;
+    border: 1px solid #080808;
+}
+
+.hero__subtitle {
+    font-size: 32px;
+    line-height: 28px;
+    font-family: 'Playfair Display', serif;
+    margin: 20px;
+    margin-bottom: 10px;
+    color: #ffffff;
 }
 
 /*hero ==========Julia============*/
