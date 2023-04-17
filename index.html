@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
 
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Baktybala</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./assets/style/normalize.css">
@@ -13,7 +14,7 @@
 </head>
 
 <body>
-    <header class="header wrapper">
+    <header class="header">
         <div class="header__container">
             <div class="header__left-part"> <!-- логотип сделать ссылкой  -->
                 <div class="header__left-part">
@@ -55,23 +56,84 @@
                             src="./assets/img/icons/whatsapp-icon.svg" alt="whatsapp"></a>
                 </div>
             </div>
+        </div>
+
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox">
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+            <ul class="menu__box">
+                <li><a class="menu__item" href="#">С чем я работаю</a></li>
+                <li><a class="menu__item" href="#">Гайд</a></li>
+                <li><a class="menu__item" href="#">Обо мне</a></li>
+                <li><a class="menu__item" href="#">Отзывы</a></li>
+                <li><a class="menu__item" href="#">Видео</a></li>
+                <li><a class="menu__item" href="#">Контакты</a></li>
+            </ul>
+        </div>
+    </header>
+    <section class="hero wrapper">
+        <h1 class="hero__title">Baktybala</h1>
 
 
-            <div class="hamburger-menu wrapper">
-                <input id="menu__toggle" type="checkbox">
-                <label class="menu__btn" for="menu__toggle">
-                    <span></span>
-                </label>
-                <ul class="menu__box">
-                    <li><a class="menu__item" href="#">С чем я работаю</a></li>
-                    <li><a class="menu__item" href="#">Гайд</a></li>
-                    <li><a class="menu__item" href="#">Обо мне</a></li>
-                    <li><a class="menu__item" href="#">Отзывы</a></li>
-                    <li><a class="menu__item" href="#">Видео</a></li>
-                    <li><a class="menu__item" href="#">Контакты</a></li>
+    </section>
+
+    <!----FOOTER PART MILA-------->
+    <div class="contacts">
+        <div class="contacts__left">
+            <div class="contacts__header">
+                <h3 class="contacts__header-text">Посетите мои странички в социальных сетях, чтобы записаться на
+                    консультацию или узнать больше обо мне.</h3>
+            </div>
+            <div class="contacts__media">
+                <ul class="contacts__media-list">
+                    <li class="contacts__list-item" style="--i:-2;--clr:#1da1f2;" data-text="Telegram"><a
+                            href="https://t.me/baktybalaa"><span><i
+                                    class="fa-brands fa-telegram"></i></span>Telegram</a></li>
+                    <li class="contacts__list-item" style="--i:-1;--clr:#25d366;" data-text="Whatsapp"><a
+                            href="#"><span><i class="fa-brands fa-whatsapp"></i></span>Whatsapp</a></li>
+                    <li class="contacts__list-item" style="--i:0;--clr:#c32aa3;" data-text="Instagram"><a
+                            href="https://www.instagram.com/baktybala_/"><span><i
+                                    class="fa-brands fa-instagram"></i></span>Instagram</a></li>
+                    <li class="contacts__list-item" style="--i:1;--clr:#ff0000;" data-text="Youtube"><a
+                            href="https://www.youtube.com/channel/UCbUzwgNdhQ9DiFosSTzaGww/about"><span><i
+                                    class="fa-brands fa-youtube"></i></span>Youtube</a></li>
                 </ul>
             </div>
-    </header>
+        </div>
+        <!--<div class="contacts__right">
+            <img class="contacts__right-picture" src="./assets/img/Photo_mountains.jpg" alt="">
+        </div>-->
+    </div>
+    <div class="footercontainer">
+        <div class="footercontainer__copyright">
+            <p class="footercontainer__copyright-text1">©2023 Персональный сайт психолога. </p>
+            <p class="footercontainer__copyright-text2"> Копирование материалов сайта без разрешения правообладателя
+                запрещено. </p>
+        </div>
+        <div class="footercontainer__media">
+            <ul class="footercontainer__media-social">
+                <li><a href="https://t.me/baktybalaa"><img class="social__telegram"
+                            src="./assets/img/icons/telegram.svg" alt="telegram"></a></li>
+                <li><a href="https://www.instagram.com/baktybala_/"></a><img class="social__instagram"
+                        src="./assets/img/icons/instagram.svg" alt="instagram"></a></li>
+                <li><a href="https://www.youtube.com/channel/UCbUzwgNdhQ9DiFosSTzaGww/about"><img
+                            class="social__youtube" src="./assets/img/icons/youtube.svg" alt="youtube"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="bottom">
+        <p class="bottom__design">WEBSITE BY ITGIRLS</p>
+    </div>
+
+
+
+
+
+
+
+
 
     <section class="hero">
         <h1 class="hero__title">Baktybala</h1>
