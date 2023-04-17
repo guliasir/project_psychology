@@ -37,11 +37,6 @@ p {
     padding: 0 15px;
 }
 
-link:hover,
-link:focus,
-link:active {
-    opacity: 0.75;
-}
 
 p:hover,
 p:focus {
