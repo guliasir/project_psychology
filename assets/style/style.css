@@ -404,7 +404,7 @@ h2 {
     list-style: none;
     width: 100px;
     padding: 15px;
-    background: #383838;
+    background: #aaaaaa;
     transition: 0.5s;
 }
 
@@ -420,7 +420,7 @@ h2 {
     left: -40px;
     width: 40px;
     height: 100%;
-    background: #2f2f30;
+    background: #aaaaaa;
     transform-origin: right;
     transform: skewY(45deg);
     transition: 0.5s;
@@ -438,10 +438,10 @@ h2 {
     left: 0;
     width: 100%;
     height: 40px;
-    background: #3e3e3e;
+    background: #aaaaaa;
     transform-origin: bottom;
     transform: skewX(45deg);
-    box-shadow: -120px 120px 20px rgba(0, 0, 0.25);
+    box-shadow: -120px 120px 20px rgb(179, 170, 170);
     transition: 0.5s;
     display: flex;
     align-items: center;
@@ -455,14 +455,13 @@ h2 {
     filter: brightness(0.9);
     background: var(--clr);
     color: #fff;
-    box-shadow: -170px 170px 20px rgba(0, 0, 0.25);
+    box-shadow: -170px 170px 20px rgba(179, 170, 170);
 }
 
 .contacts__list-item a {
     text-decoration: none;
     color: transparent;
     display: block;
-    text-transform: uppercase;
     letter-spacing: 0.05em;
     transition: 0.5s;
 }
@@ -512,11 +511,16 @@ c {
     cursor: pointer;
 }
 
+.social__whatsapp,
 .social__telegram,
 .social__instagram,
 .social__youtube {
+    width: 60px;
+    height: 60px;
     padding: 12px;
 }
+
+
 
 .bottom {
     display: flex;
