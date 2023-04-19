@@ -561,6 +561,7 @@ h2 {
 .contacts__email {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .contacts__email-img{
