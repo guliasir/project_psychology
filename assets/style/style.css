@@ -39,9 +39,13 @@ p {
 
 
 p:hover,
-p:focus {
+p:focus,
+h2:hover,
+h2:focus,
+li:hover,
+li:focus {
     color: black;
-    opacity: 0.75;
+    opacity: 0.80;
 }
 
 
@@ -238,6 +242,7 @@ p:focus {
     flex-direction: row;
     justify-content: center;
     max-width: 100%;
+    border-bottom: 1px solid #38383860;
     }
     .hero__photo {max-width: 600px;
     margin-top: 32px;
@@ -248,6 +253,7 @@ p:focus {
     justify-content: flex-end;
     max-width: 50%;
     margin-left: 64px;
+    margin-right: 32px;
     }
     .hero__title {margin-bottom: 250px;
         font-style: normal;
@@ -255,7 +261,7 @@ p:focus {
         font-size: 100px;
         line-height: 28px;
         font-family: 'Playfair Display', serif;
-        color: black;}
+        color: #4d4d4d}
     .hero__citation {display: flex;
         align-items: center;
         text-align: center;
@@ -272,21 +278,79 @@ p:focus {
         color: #f4f4f4;
         background-color: #4d4d4d90;}
 
-        @media screen and (max-width: 903px) {
-    .hero__container {display: flex;
-    flex-direction: column-reverse;
+        @media screen and (min-width: 903px)
+        {.hero__container-adaptation {display: none;}}
+
+        @media screen and (max-width: 902px) {
+            .hero__container {display: none}
+    .hero__container-adaptation {display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    max-width: 100%;
+    border-bottom: 1px solid #38383860;
     }
-    .hero__text {margin: 0;
-        justify-content:center;}
+ .hero__citation {max-width: 600px;}
     .hero__title {margin-bottom: 32px;}
-    .hero__citation {display: none;}}
+    .hero__photo {max-width: 450px;}}
 /*HERO PART ANASTASIA ENDS*/
 
 /*MYJOB PART ANASTASIA*/
+.Myjob__container {display: flex;
+    flex-direction: row;
+justify-content: space-around;
+align-items: center;
+border-bottom: 1px solid #38383860;
+    }
+
+.Myjob__left {display: flex;
+    flex-direction: column;
+margin-left: 32px;}
+
+.Myjob__citation {display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    padding: 15px;
+    width: 400px;
+    height: 150px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    font-family: 'Playfair Display', serif;
+    color: #f4f4f4;
+    background-color: #5b554b90;}
+    .Myjob__citation p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 36px;
+        font-family: 'Playfair Display', serif;
+        color: #f4f4f4;
+        }
+
+.Myjob__photo {max-width: 450px;
+    margin-right: 32px;
+}
+.Myjob__left-list {font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: 'Playfair Display', serif;
+    color: #4d4d4d}
+
+    @media screen and (max-width: 903px)
+    {.Myjob__container {display: flex;
+        flex-direction: column;
+    align-items: center;}
+    .Myjob__left {margin-left: 0;
+    margin-bottom: 32px;}
+    .Myjob__photo {margin-left: 0;}}
 
 /*MYJOB PART ANASTASIA ENDS*/
+
 /*About me PART Gulya start*/
 .about__body {
     max-width: 100%;
@@ -315,7 +379,6 @@ h2 {
     line-height: 28px;
     font-family: 'Playfair Display', serif;
     color: #4d4d4d;
-    
 }
 .about__target  {
     border: 5px solid #4d4d4d;
@@ -354,62 +417,6 @@ h2 {
 }
 
 /*About me PART Gulya end*/
-
-/*HERO PART ANASTASIA*/
-
-
-.hero__container {display: flex;
-    flex-direction: row;
-    justify-content: center;
-    max-width: 100%;
-    }
-    .hero__photo {max-width: 600px;
-    margin-top: 32px;
-    }
-    .hero__text {display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    max-width: 50%;
-    margin-left: 64px;
-    }
-    .hero__title {margin-bottom: 250px;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 100px;
-        line-height: 28px;
-        font-family: 'Playfair Display', serif;
-        color: black;}
-    .hero__citation {display: flex;
-        align-items: center;
-        text-align: center;
-        border-radius: 10px;
-        padding: 15px;
-        margin-bottom: 100px;
-        width: 400px;
-        height: 100px;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 36px;
-        font-family: 'Playfair Display', serif;
-        color: #f4f4f4;
-        background-color: #4d4d4d90;}
-
-        @media screen and (max-width: 903px) {
-    .hero__container {display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: space-around;
-    }
-    .hero__text {margin: 0;
-        justify-content:center;}
-    .hero__title {margin-bottom: 32px;}
-    .hero__citation {display: none;}}
-/*HERO PART ANASTASIA ENDS*/
-
-/*MYJOB PART ANASTASIA*/
-
 
 /*FOOTER PART MILA*/
 .contacts {
