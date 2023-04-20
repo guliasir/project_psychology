@@ -11,16 +11,14 @@
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./assets/style/normalize.css">
     <link rel="stylesheet" type="text/css" href="./assets/style/style.css">
- 
 </head>
 
 <body>
     <header class="header wrapper">
         <div class="header__container">
             <div class="header__left-part"> <!-- логотип сделать ссылкой  -->
-                <div class="header__left-part">
-                    <img class="header__logo" src="./assets/img/logo.svg" alt="Baktybala">
-                    <nav class="header__navigation">
+                <img class="header__logo" src="./assets/img/logo.svg" alt="Baktybala">
+                <!-- <nav class="header__navigation">
                         <ul class="header__menu">
                             <li class="header__item">
                                 <a class="header__link" href="#">С чем я работаю</a>
@@ -41,52 +39,56 @@
                                 <a class="header__link" href="#">Контакты</a>
                             </li>
                         </ul>
-                    </nav>
-                </div>
-
-                <div class="header__right-part">
-                    <a class="header__link" href=" https://www.instagram.com/baktybala_" target="_blank"><img
-                            class="header__icon" src="./assets//img/ico/insta-icon.svg" alt="instagram"></a>
-                    <a class="header__link" href="https://t.me/baktybalaa" target="_blank"><img class="header__icon"
-                            src="./assets/img/ico/telegram-icon.svg" alt="telegram"></a>
-                    <a class="header__link" href="#" target="_blank"><img class="header__icon"
-                            src="./assets/img/ico/vk-icon.svg" alt="VKontakte"></a>
-                    <a class="header__link" href="https://www.youtube.com/@baktybala" target="_blank"><img
-                            class="header__icon" src="./assets/img/ico/youtube-icon.svg" alt="youtube"></a>
-                    <a class="header__link" href="#" target="_blank"><img class="header__icon"
-                            src="./assets/img/ico/wtatsapp-icon.svg" alt="whatsapp"></a>
+                    </nav> -->
+                <div class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox">
+                    <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                    </label>
+                    <ul class="menu__box">
+                        <li><a class="menu__item" href="#">С чем я работаю</a></li>
+                        <li><a class="menu__item" href="#">Гайд</a></li>
+                        <li><a class="menu__item" href="#">Обо мне</a></li>
+                        <li><a class="menu__item" href="#">Отзывы</a></li>
+                        <li><a class="menu__item" href="#">Видео</a></li>
+                        <li><a class="menu__item" href="#">Контакты</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
 
-        <div class="hamburger-menu">
-            <input id="menu__toggle" type="checkbox">
-            <label class="menu__btn" for="menu__toggle">
-                <span></span>
-            </label>
-            <ul class="menu__box">
-                <li><a class="menu__item" href="#">С чем я работаю</a></li>
-                <li><a class="menu__item" href="#">Гайд</a></li>
-                <li><a class="menu__item" href="#">Обо мне</a></li>
-                <li><a class="menu__item" href="#">Отзывы</a></li>
-                <li><a class="menu__item" href="#">Видео</a></li>
-                <li><a class="menu__item" href="#">Контакты</a></li>
-            </ul>
+        <div class="header__right-part">
+            <a class="header__link" href=" https://www.instagram.com/baktybala_" target="_blank"><img
+                    class="header__icon" src="./assets//img/ico/insta-icon.svg" alt="instagram"></a>
+            <a class="header__link" href="https://t.me/baktybalaa" target="_blank"><img class="header__icon"
+                    src="./assets/img/ico/telegram-icon.svg" alt="telegram"></a>
+            <a class="header__link" href="#" target="_blank"><img class="header__icon"
+                    src="./assets/img/ico/vk-icon.svg" alt="VKontakte"></a>
+            <a class="header__link" href="https://www.youtube.com/@baktybala" target="_blank"><img class="header__icon"
+                    src="./assets/img/ico/youtube-icon.svg" alt="youtube"></a>
+            <a class="header__link" href="#" target="_blank"><img class="header__icon"
+                    src="./assets/img/ico/wtatsapp-icon.svg" alt="whatsapp"></a>
         </div>
+        </div>
+
     </header>
     <!----HERO PART ANASTASIA-------->
     <section class="hero__container">
         <img src="./assets/img/hero.png" alt="hero_photo" class="hero__photo">
 
-    <div class="hero__text"> <p class="hero__title">Baktybala</p><button class="hero__btn"><a href="">Записаться на консультацию</a></button>
-        <p class="hero__citation">“I am not what happened to me,
-            I am what I choose to become” <br>Carl Jung</p></div>
+        <div class="hero__text">
+            <p class="hero__title">Baktybala</p><button class="hero__btn"><a href="">Записаться на
+                    консультацию</a></button>
+            <p class="hero__citation">“I am not what happened to me,
+                I am what I choose to become” <br>Carl Jung</p>
+        </div>
 
         </div>
 
     </section>
     <section class="hero__container-adaptation">
-        <p class="hero__title">Baktybala</p><button class="hero__btn"><a href="#">Записаться на консультацию</a></button><img src="./assets/img/hero.png" alt="hero_photo" class="hero__photo">
+        <p class="hero__title">Baktybala</p><button class="hero__btn"><a href="#">Записаться на
+                консультацию</a></button><img src="./assets/img/hero.png" alt="hero_photo" class="hero__photo">
         <p class="hero__citation">“I am not what happened to me,
             I am what I choose to become”</p>
     </section>
@@ -137,11 +139,12 @@
     <!----Julia-------->
 
     <!----Gulya about me block start-------->
-    <section class="about"> 
-        
+
+    <section class="about">
+        <h2 class="about__title">Обо мне</h2>
         <div class="about__body">
-       
-            <h2 class="about__title">Обо мне</h2>
+
+
             <div class="about__content">
 
                 <div class="about__aside">

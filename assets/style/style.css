@@ -41,26 +41,23 @@ p {
 p:hover,
 p:focus,
 h2:hover,
-h2:focus,
-li:hover,
-li:focus {
-    color: black;
+h2:focus {
     opacity: 0.80;
+    transition: 0.8s;
 }
 
-img:hover {opacity: 0.90}
 
 /* header styles (julia)*/
 .header {
     display: flex;
     flex-wrap: wrap;
-    height: 60px;
-    margin-bottom: 150px;
+    height: 86px;
+    justify-content: space-around;
 }
 
 .header__container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 
 }
 
@@ -68,7 +65,7 @@ img:hover {opacity: 0.90}
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin-right: 60px;
+    margin-right: 180px;
 }
 
 .header__logo {
@@ -116,6 +113,7 @@ img:hover {opacity: 0.90}
 .header__link:focus,
 .header__link:active {
     opacity: 0.75;
+    transition: 0.1s;
 }
 
 
@@ -132,11 +130,7 @@ img:hover {opacity: 0.90}
 
 /* gamburger */
 
-@media screen and (min-width: 903px) {
-    .hamburger-menu {
-        display: none;
-    }
-}
+
 
 @media screen and (max-width: 903px) {
     .header__navigation {
@@ -145,7 +139,7 @@ img:hover {opacity: 0.90}
 }
 
 #menu__toggle {
-    opacity: 0;
+    opacity: 0.1;
 }
 
 #menu__toggle:checked+.menu__btn>span {
@@ -189,12 +183,12 @@ img:hover {opacity: 0.90}
 
 .menu__btn>span::before {
     content: "";
-    top: -8px;
+    top: -7px;
 }
 
 .menu__btn>span::after {
     content: "";
-    top: 8px;
+    top: 7px;
 }
 
 .menu__box {
@@ -216,7 +210,7 @@ img:hover {opacity: 0.90}
 .menu__item {
     display: block;
     padding: 12px 24px;
-    color: white;
+    color: rgb(68, 66, 66);
     font-family: 'Playfair Display', serif;
     font-size: 40px;
     font-weight: 400;
@@ -226,12 +220,6 @@ img:hover {opacity: 0.90}
     z-index: 9;
 }
 
-.right-link {
-    padding-right: 32px;
-    color: black;
-    text-decoration: none;
-    transition: 0.2s all;
-}
 
 .menu__item:hover {
     background-color: #f4f4f4;
@@ -272,28 +260,6 @@ img:hover {opacity: 0.90}
     color: #4d4d4d
 }
 
-.hero__btn {
-    text-align: center;
-    border-radius: 10px;
-    padding: 15px;
-    margin-bottom: 50px;
-    width: 300px;
-    height: 70px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 36px;
-    font-family: 'Playfair Display', serif;
-    background-color: #4d4d4d;
-    outline: none;
-}
-.hero__btn a {
-    text-decoration: none;
-    color: #f4f4f4;
-}
-.hero__btn a:hover {
-color: #959393;
-}
 .hero__citation {
     display: flex;
     align-items: center;
@@ -319,23 +285,32 @@ color: #959393;
 }
 
 @media screen and (max-width: 902px) {
-
-    .hero__container {display: none}
-    .hero__container-adaptation {display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    max-width: 100%;
-    border-bottom: 1px solid #38383860;
+    .hero__container {
+        display: none
     }
-    .hero__citation {max-width: 600px;}
-    .hero__title {margin-bottom: 86px;}
-    .hero__photo {max-width: 450px;}
-    .hero__btn {margin-bottom: 0;}}
 
-    
+    .hero__container-adaptation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        max-width: 100%;
+        border-bottom: 1px solid #38383860;
+    }
 
-    
+    .hero__citation {
+        max-width: 600px;
+    }
+
+    .hero__title {
+        margin-bottom: 32px;
+    }
+
+    .hero__photo {
+        max-width: 450px;
+    }
+}
+
 /*HERO PART ANASTASIA ENDS*/
 
 /*MYJOB PART ANASTASIA*/
@@ -347,14 +322,11 @@ color: #959393;
     border-bottom: 1px solid #38383860;
 }
 
-
 .Myjob__left {
     display: flex;
     flex-direction: column;
     margin-left: 32px;
-    }
-
-
+}
 
 .Myjob__citation {
     display: flex;
@@ -372,9 +344,7 @@ color: #959393;
     font-family: 'Playfair Display', serif;
     color: #f4f4f4;
     background-color: #5b554b90;
-    }
-
-
+}
 
 .Myjob__citation p {
     font-style: normal;
@@ -396,7 +366,7 @@ color: #959393;
     font-size: 16px;
     line-height: 30px;
     font-family: 'Playfair Display', serif;
-    color: #4d4d4d
+    color: #4d4d4d;
 }
 
 @media screen and (max-width: 903px) {
@@ -424,13 +394,13 @@ color: #959393;
 
 
 .about__body {
+
     max-width: 1300px;
    display: flex;
  
    margin-left: 9%;
    margin-right: 5%;
    flex-direction: column;
-   
   
 }
 
@@ -455,7 +425,7 @@ color: #959393;
 }
 .about__content {
     display: flex;
-   justify-content: center;
+    align-items: center;
     gap: 20px;
 }
 
@@ -566,18 +536,11 @@ h3 {
 
 }
 
-
-@media screen and (min-width: 1700px) {
-    .about__body {
-        max-width: 1300px;
-        display: flex;
-      
-        margin-left: 15%;
        
         
     
     }
-    }
+  
 /*About me PART Gulya end*/
 
 /*About guide Nadya start*/
@@ -593,7 +556,8 @@ h3 {
     background-color: #5b554b90;
 }
 
-/*About guide Nadya end*/
+
+/*About me PART Gulya end*/
 
 
 /*About reviews Nadya start*/
@@ -633,19 +597,6 @@ h6 {
     color: #858687;
     text-align: end;
     margin: 10px;
-}
-
-@media screen and (max-width: 1200px) {
-    .reviews__top {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .reviews__bottom {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
 }
 
 /*About reviews Nadya end*/
