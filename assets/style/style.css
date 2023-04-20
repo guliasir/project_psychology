@@ -41,11 +41,9 @@ p {
 p:hover,
 p:focus,
 h2:hover,
-h2:focus,
-li:hover,
-li:focus {
-    color: black;
+h2:focus {
     opacity: 0.80;
+    transition: 0.8s;
 }
 
 
@@ -54,12 +52,12 @@ li:focus {
     display: flex;
     flex-wrap: wrap;
     height: 60px;
-    margin-bottom: 150px;
+    justify-content: space-around;
 }
 
 .header__container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 
 }
 
@@ -67,7 +65,7 @@ li:focus {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin-right: 60px;
+    margin-right: 180px;
 }
 
 .header__logo {
@@ -115,6 +113,7 @@ li:focus {
 .header__link:focus,
 .header__link:active {
     opacity: 0.75;
+    transition: 0.1s;
 }
 
 
@@ -131,11 +130,7 @@ li:focus {
 
 /* gamburger */
 
-@media screen and (min-width: 903px) {
-    .hamburger-menu {
-        display: none;
-    }
-}
+
 
 @media screen and (max-width: 903px) {
     .header__navigation {
@@ -188,12 +183,12 @@ li:focus {
 
 .menu__btn>span::before {
     content: "";
-    top: -8px;
+    top: -7px;
 }
 
 .menu__btn>span::after {
     content: "";
-    top: 8px;
+    top: 7px;
 }
 
 .menu__box {
@@ -225,12 +220,6 @@ li:focus {
     z-index: 9;
 }
 
-.right-link {
-    padding-right: 32px;
-    color: black;
-    text-decoration: none;
-    transition: 0.2s all;
-}
 
 .menu__item:hover {
     background-color: #f4f4f4;
@@ -377,7 +366,7 @@ li:focus {
     font-size: 16px;
     line-height: 30px;
     font-family: 'Playfair Display', serif;
-    color: #4d4d4d
+    color: #4d4d4d;
 }
 
 @media screen and (max-width: 903px) {
