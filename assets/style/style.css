@@ -661,7 +661,7 @@ h3 {
     background-color: #4d4d4d90;
     color: #fffbfb;
     font-size: 25px;
-    border: 1px solid #404040;
+    border: 0px solid #404040;
     cursor: pointer;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
