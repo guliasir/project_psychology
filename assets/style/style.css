@@ -480,6 +480,21 @@ h2 {
     }
 /*About me PART Gulya end*/
 
+/*About guide Nadya start*/
+.about__guide {
+    max-width: 1300px;
+    margin: 0 auto;
+    margin: 20px auto;
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+    font-family: 'Playfair Display', serif;
+    color: #f4f4f4;
+    background-color: #5b554b90;
+}
+
+/*About guide Nadya end*/
+
 
 /*About reviews Nadya start*/
 .container {
@@ -518,6 +533,19 @@ h6 {
     color: #858687;
     text-align: end;
     margin: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    .reviews__top {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .reviews__bottom {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
 }
 
 /*About reviews Nadya end*/
