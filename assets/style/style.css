@@ -402,8 +402,9 @@ li:focus {
 /*About me PART Gulya start*/
 .about__body {
     max-width: 100%;
-    margin: 0 auto;
-    padding: 0 15px;
+   display: flex;
+   justify-content: center;
+
 }
 
 .about__title {
@@ -419,7 +420,7 @@ li:focus {
 
 .about__content {
     display: flex;
-    align-items: center;
+   justify-content: center;
     gap: 20px;
 }
 
@@ -469,7 +470,14 @@ h2 {
     color: #4d4d4d;
 
 }
-
+@media screen and (min-width: 1700px) {
+    .about__body {
+        max-width: 100%;
+       display: flex;
+       justify-content: center;
+    
+    }
+    }
 /*About me PART Gulya end*/
 
 
