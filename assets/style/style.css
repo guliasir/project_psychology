@@ -51,7 +51,6 @@ img:hover {
 
 /* header styles (julia)*/
 .header {
-<<<<<<< HEAD
     display: flex;
     flex-wrap: wrap;
     height: 86px;
@@ -62,17 +61,6 @@ img:hover {
     display: flex;
     justify-content: space-around;
 
-=======
-  display: flex;
-  flex-wrap: wrap;
-  height: 86px;
-  justify-content: space-between;
-}
-
-.header__container {
-  display: flex;
-  justify-content: space-between;
->>>>>>> b8b8b5bb8aa4d795153d768144fdf09db33670f9
 }
 
 .header__left-part {
@@ -130,14 +118,8 @@ img:hover {
 }
 
 .header__right-part {
-<<<<<<< HEAD
     display: flex;
     align-items: center;
-=======
-  display: flex;
-  align-items: center;
-  margin-right: 98px;
->>>>>>> b8b8b5bb8aa4d795153d768144fdf09db33670f9
 }
 
 .header__icon {
@@ -295,11 +277,7 @@ img:hover {
   color: #f4f4f4;
 }
 .hero__btn a:hover {
-<<<<<<< HEAD
 color: #959393;
-=======
-  color: #959393;
->>>>>>> b8b8b5bb8aa4d795153d768144fdf09db33670f9
 }
 .hero__citation {
   display: flex;
@@ -330,71 +308,37 @@ color: #959393;
     display: none;
   }
 
-<<<<<<< HEAD
     .hero__container {display: none}
     .hero__container-adaptation {display: flex;
-=======
-  .hero__container-adaptation {
-    display: flex;
->>>>>>> b8b8b5bb8aa4d795153d768144fdf09db33670f9
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     max-width: 100%;
     border-bottom: 1px solid #38383860;
-<<<<<<< HEAD
     }
     .hero__citation {max-width: 600px;}
     .hero__title {margin-bottom: 86px;}
     .hero__photo {max-width: 450px;}
     .hero__btn {margin-bottom: 0;}}
-=======
-  }
-
-  .hero__citation {
-    max-width: 600px;
-  }
-
-  .hero__title {
-    margin-bottom: 86px;
-  }
-
-  .hero__photo {
-    max-width: 450px;
-  }
-
-  .hero__btn {
-    margin-bottom: 0;
-  }
-}
->>>>>>> b8b8b5bb8aa4d795153d768144fdf09db33670f9
 
 /*HERO PART ANASTASIA ENDS*/
 
 /*MYJOB PART ANASTASIA*/
 .Myjob__container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 70px;
-}
-
-.Myjob__left {
-<<<<<<< HEAD
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+  }
+  
+  .Myjob__left {
     display: flex;
     flex-direction: column;
     margin-left: 32px;
-    }
-=======
-  display: flex;
-  flex-direction: column;
-  margin-left: 32px;
-}
->>>>>>> b8b8b5bb8aa4d795153d768144fdf09db33670f9
-
-.Myjob__citation {
-<<<<<<< HEAD
+  }
+  
+  .Myjob__citation {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -407,74 +351,56 @@ color: #959393;
     font-weight: 400;
     font-size: 20px;
     line-height: 36px;
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
     color: #f4f4f4;
     background-color: #5b554b90;
-    }
-=======
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  border-radius: 10px;
-  padding: 15px;
-  width: 400px;
-  height: 150px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 36px;
-  font-family: "Playfair Display", serif;
-  color: #f4f4f4;
-  background-color: #5b554b90;
-}
->>>>>>> b8b8b5bb8aa4d795153d768144fdf09db33670f9
-
-.Myjob__citation p {
-  margin: 0;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 36px;
-  font-family: "Playfair Display", serif;
-  color: #f4f4f4;
-}
-
-.Myjob__photo {
-  max-width: 450px;
-  margin-right: 32px;
-}
-
-.Myjob__left-list {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 30px;
-  font-family: "Playfair Display", serif;
-  color: #4d4d4d;
-}
-
-@media screen and (max-width: 903px) {
-  .Myjob__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
-
-  .Myjob__left {
-    margin-left: 0;
-    margin-bottom: 32px;
+  
+  .Myjob__citation p {
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    font-family: "Playfair Display", serif;
+    color: #f4f4f4;
   }
-
+  
   .Myjob__photo {
-    margin-left: 0;
+    max-width: 450px;
+    margin-right: 32px;
   }
-}
-
-.border {
-  width: 100%;
-  border-bottom: 1px solid #38383860;
-}
+  
+  .Myjob__left-list {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: "Playfair Display", serif;
+    color: #4d4d4d;
+  }
+  
+  @media screen and (max-width: 903px) {
+    .Myjob__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .Myjob__left {
+      margin-left: 0;
+      margin-bottom: 32px;
+    }
+  
+    .Myjob__photo {
+      margin-left: 0;
+    }
+  }
+  
+  .border {
+    width: 100%;
+    border-bottom: 1px solid #38383860;
+  }
 /*MYJOB PART ANASTASIA ENDS*/
 
 /*About me PART Gulya start*/
@@ -482,17 +408,11 @@ color: #959393;
 .about__body {
   max-width: 1300px;
 
-<<<<<<< HEAD
     max-width: 1300px;
    display: flex;
    flex-direction: column;
    margin-bottom: 70px;
   
-=======
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 70px;
->>>>>>> b8b8b5bb8aa4d795153d768144fdf09db33670f9
 }
 
 .about__title {
@@ -521,11 +441,7 @@ color: #959393;
 }
 
 .about__education_title {
-<<<<<<< HEAD
 margin-top: 30px;
-=======
-  margin-top: 30px;
->>>>>>> b8b8b5bb8aa4d795153d768144fdf09db33670f9
 }
 h2 {
   font-style: normal;
@@ -591,7 +507,6 @@ h3 {
   color: #f4f4f4;
 }
 .about__citation {
-<<<<<<< HEAD
     
 
     display: flex;
@@ -609,23 +524,6 @@ h3 {
     font-family: 'Playfair Display', serif;
     color: white;
     background-color: #4d4d4d90;
-=======
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  border-radius: 10px;
-  padding: 10px;
-  width: 350px;
-  height: 150px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 36px;
-  font-family: "Playfair Display", serif;
-  color: white;
-  background-color: #4d4d4d90;
->>>>>>> b8b8b5bb8aa4d795153d768144fdf09db33670f9
 }
 
 .about__item {
@@ -638,7 +536,6 @@ h3 {
 }
 
 .about__education_title {
-<<<<<<< HEAD
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -646,14 +543,6 @@ h3 {
     font-family: 'Playfair Display', serif;
     color: #4d4d4d
 
-=======
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 30px;
-  font-family: "Playfair Display", serif;
-  color: #4d4d4d;
->>>>>>> b8b8b5bb8aa4d795153d768144fdf09db33670f9
 }
 
 .about__article {
@@ -661,14 +550,10 @@ h3 {
   flex-direction: column-reverse;
   align-items: center;
 }
-<<<<<<< HEAD
         
     
     
   
-=======
-
->>>>>>> b8b8b5bb8aa4d795153d768144fdf09db33670f9
 /*About me PART Gulya end*/
 
 /* ====Viddeo start (Julia)*/
@@ -898,118 +783,6 @@ h3 {
 
 /*About me PART Gulya end*/
 
-<<<<<<< HEAD
-=======
-/* ====Viddeo start (Julia)
-.video {
-  margin-bottom: 100px;
-  border-top: 1px solid #38383860;
-  border-bottom: 1px solid #38383860;
-}
-
-.video__container {
-  display: flex;
-}
-
-.video__title {
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 60px;
-}
-
-.video__left-part {
-  display: block;
-  margin-right: 8px;
-}
-
-.video__content {
-  margin-bottom: 20px;
-}
-
-.video__right-part {
-  max-width: 700px;
-}
-
-.video__subtitle-content {
-  padding: 10px;
-  border: 1px solid #444242;
-  margin-top: 200px;
-  margin-bottom: 80px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.video__subtitle {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
-  font-family: "Playfair Display", serif;
-  color: #4d4d4d;
-}
-
-.video__btn {
-  width: 300px;
-  height: 100px;
-  background-color: #4d4d4d90;
-  color: #fffbfb;
-  font-size: 25px;
-  border: 0px solid #404040;
-  cursor: pointer;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.video__btn:hover,
-.video__btn:focus,
-.video__btn:active {
-  opacity: 0.75;
-}
-
-@media screen and (max-width: 780px) {
-  .video {
-    display: block;
-  }
-
-  .video__container {
-    display: block;
-  }
-
-  .video__title {
-    text-align: center;
-    margin-top: 70px;
-    margin-bottom: 30px;
-  }
-
-  .video__content {
-    margin: 10 auto;
-    text-align: center;
-  }
-
-  .video__subtitle-content {
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-
-  .video__btn {
-    margin: auto;
-  }
-
-  .video__form {
-    text-align: center;
-  }
-
-  .video__content {
-    width: 100%;
-    height: 350px;
-  }
-}
-
-/* ====Viddeo start (Julia)*/
->>>>>>> b8b8b5bb8aa4d795153d768144fdf09db33670f9
 
 /*About reviews Nadya start*/
 .container {
