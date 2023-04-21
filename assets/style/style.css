@@ -426,8 +426,8 @@ color: #959393;
 }
 
 .about__image {
-  width: 350px;
-  height: 200px;
+  width: 450px;
+  height: 300px;
   border-radius: 8px;
 }
 .about__article_title {
@@ -438,6 +438,7 @@ color: #959393;
   display: flex;
   align-items: center;
   gap: 20px;
+  justify-content: space-between;
 }
 
 .about__education_title {
@@ -550,7 +551,9 @@ h3 {
   flex-direction: column-reverse;
   align-items: center;
 }
-        
+   .about__aside {
+    margin-right: 70px;
+   }
     
     
   
