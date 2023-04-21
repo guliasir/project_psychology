@@ -48,7 +48,10 @@ h2:focus {
     transition: 0.8s;
     transform: scale(1.03);
 }
+img:hover {
+    opacity: 0.80;
 
+}
 
 /* header styles (julia)*/
 .header {
@@ -242,6 +245,7 @@ h2:focus {
 .hero__photo {
     max-width: 600px;
     margin-top: 32px;
+  
 }
 
 .hero__text {
@@ -379,6 +383,7 @@ color: #959393;
 .Myjob__photo {
     max-width: 450px;
     margin-right: 32px;
+    
 }
 
 .Myjob__left-list {
@@ -437,6 +442,8 @@ color: #959393;
     width: 350px;
     height: 200px;
     border-radius: 8px;
+    
+    
 }
 .about__article_title {
     display: flex;
