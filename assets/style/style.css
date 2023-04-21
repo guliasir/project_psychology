@@ -46,6 +46,7 @@ h2:hover,
 h2:focus {
     opacity: 0.80;
     transition: 0.8s;
+    transform: scale(1.03);
 }
 
 
@@ -425,13 +426,13 @@ color: #959393;
 .about__title {
     display: flex;
     justify-content: center;
-
 }
 
 .about__title_education {
     display: flex;
     justify-content: left;
 }
+
 .about__image {
     width: 350px;
     height: 200px;
@@ -469,6 +470,7 @@ h3 {
 .about__article {
     display: flex;
     flex-direction: column;
+    
 }
 
 .about__target {
@@ -479,7 +481,7 @@ h3 {
     justify-content: center;
     border-radius: 10px;
     padding: 10px;
-    width: 300px;
+    width: 500px;
     height: 100px;
     font-style: normal;
     font-weight: 400;
@@ -554,7 +556,11 @@ h3 {
 
 }
 
-       
+.about__article {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
         
     
     
@@ -689,8 +695,12 @@ h3 {
     margin-right: 8px;
 }
 
+
+
 .video__content {
     margin-bottom: 20px;
+    opacity: 0.8;
+    filter: grayscale(100%)
 }
 
 .video__right-part {
