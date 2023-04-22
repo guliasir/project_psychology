@@ -17,9 +17,8 @@
     <header class="header wrapper">
         <div class="header__container">
             <div class="header__left-part"> <!-- логотип сделать ссылкой  -->
-                <div class="header__left-part">
-                    <img class="header__logo" src="./assets/img/logo.svg" alt="Baktybala">
-                    <nav class="header__navigation">
+                <img class="header__logo" src="./assets/img/logo.svg" alt="Baktybala">
+                <!-- <nav class="header__navigation">
                         <ul class="header__menu">
                             <li class="header__item">
                                 <a class="header__link" href="#">С чем я работаю</a>
@@ -40,38 +39,38 @@
                                 <a class="header__link" href="#">Контакты</a>
                             </li>
                         </ul>
-                    </nav>
-                </div>
-
-                <div class="header__right-part">
-                    <a class="header__link" href=" https://www.instagram.com/baktybala_" target="_blank"><img
-                            class="header__icon" src="./assets//img/ico/insta-icon.svg" alt="instagram"></a>
-                    <a class="header__link" href="https://t.me/baktybalaa" target="_blank"><img class="header__icon"
-                            src="./assets/img/ico/telegram-icon.svg" alt="telegram"></a>
-                    <a class="header__link" href="#" target="_blank"><img class="header__icon"
-                            src="./assets/img/ico/vk-icon.svg" alt="VKontakte"></a>
-                    <a class="header__link" href="https://www.youtube.com/@baktybala" target="_blank"><img
-                            class="header__icon" src="./assets/img/ico/youtube-icon.svg" alt="youtube"></a>
-                    <a class="header__link" href="#" target="_blank"><img class="header__icon"
-                            src="./assets/img/ico/wtatsapp-icon.svg" alt="whatsapp"></a>
+                    </nav> -->
+                <div class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox">
+                    <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                    </label>
+                    <ul class="menu__box">
+                        <li><a class="menu__item" href="#">С чем я работаю</a></li>
+                        <li><a class="menu__item" href="#">Гайд</a></li>
+                        <li><a class="menu__item" href="#">Обо мне</a></li>
+                        <li><a class="menu__item" href="#">Отзывы</a></li>
+                        <li><a class="menu__item" href="#">Видео</a></li>
+                        <li><a class="menu__item" href="#">Контакты</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
 
-        <div class="hamburger-menu">
-            <input id="menu__toggle" type="checkbox">
-            <label class="menu__btn" for="menu__toggle">
-                <span></span>
-            </label>
-            <ul class="menu__box">
-                <li><a class="menu__item" href="#">С чем я работаю</a></li>
-                <li><a class="menu__item" href="#">Гайд</a></li>
-                <li><a class="menu__item" href="#">Обо мне</a></li>
-                <li><a class="menu__item" href="#">Отзывы</a></li>
-                <li><a class="menu__item" href="#">Видео</a></li>
-                <li><a class="menu__item" href="#">Контакты</a></li>
-            </ul>
+        <div class="header__right-part">
+            <a class="header__link" href=" https://www.instagram.com/baktybala_" target="_blank"><img
+                    class="header__icon" src="./assets//img/ico/insta-icon.svg" alt="instagram"></a>
+            <a class="header__link" href="https://t.me/baktybalaa" target="_blank"><img class="header__icon"
+                    src="./assets/img/ico/telegram-icon.svg" alt="telegram"></a>
+            <a class="header__link" href="#" target="_blank"><img class="header__icon"
+                    src="./assets/img/ico/vk-icon.svg" alt="VKontakte"></a>
+            <a class="header__link" href="https://www.youtube.com/@baktybala" target="_blank"><img class="header__icon"
+                    src="./assets/img/ico/youtube-icon.svg" alt="youtube"></a>
+            <a class="header__link" href="#" target="_blank"><img class="header__icon"
+                    src="./assets/img/ico/wtatsapp-icon.svg" alt="whatsapp"></a>
         </div>
+        </div>
+
     </header>
     <!----HERO PART ANASTASIA-------->
     <section class="hero__container wrapper">
@@ -128,38 +127,40 @@ HERO PART ANASTASIA ENDS-------->
 
 
 
-    <!----Julia-------->
+     <!----Gulya about me block start-------->
 
-    <section class="youtube">
-        <div class="youtube__left-part"></div>
-        <div class="youtube__right-part"></div>
-    </section>
-    <!----Julia-------->
-
-    <!----Gulya about me block start-------->
-    <section class="about"> <h2 class="about__title">Обо мне</h2>
+     <section class="about wrapper">
+        <h2 class="about__title">Обо мне</h2>
+        <div class="about__education_mobile">
+        <div class="about__education_title">Практикующий психолог, опыт работы более 2 лет</div>
+    </div>
         <div class="about__body">
-       
-
             <div class="about__content">
 
                 <div class="about__aside">
                     <img src="./assets/img/hands_photo.jpg" alt="hands" class="about__image">
-                    <div class="about__target">
-                        <p>Цель моей работы- просвещение</p>
-                    </div>
+                   <div class="about__citations">
+                  
                     <div class="about__citation">
                         <p>"Создавая самого себя, обретаешь источник великой гордости"<br> И. Ялом</p>
                     </div>
-
                 </div>
+                </div>
+                
                 <div class="about__article">
+                    
+                    
+                    <div class="about__target">
+                        <p>Цель моей работы- просвещение</p>
+                    </div>
 
                     <div class="about__education">
-                        <div class="about__education_title">Практикующий психолог, опыт работы более 2 лет</div>
+                    
+                        <div class="about__education_title2">Практикующий психолог, опыт работы более 2 лет</div>
+                    
 
                         <ul class="about__education_list">
-                            <a class="about__education_title">Мое образование:</a>
+                            <h3 class="about__title_education">Мое образование</h3>
                             <li class="about__item">
                                 <a class="about__item list">KIMEP University (маркетинг и юриспруденция 2011-2014)</a>
                             </li>
@@ -179,20 +180,8 @@ HERO PART ANASTASIA ENDS-------->
                                     работе с травмой (2022-2023)</a>
                             </li>
                             <li class="about__item">
-                                <a class="about__item list">Участник IV ежегодной конференции ПСАГС "Психологическое
-                                    здоровье в нездоровом мире: ответы гештальт-терапевтов"</a>
-                            </li>
-                            <li class="about__item">
-                                <a class="about__item list">Участник открытого воркшопа по "Работе с пограничным опытом
-                                    в Гештальт подходе" с Маргаритой Спаньола Лобб</a>
-                            </li>
-                            <li class="about__item">
-                                <a class="about__item list">Участник открытого воркшопа по "Работе с депрессией в
-                                    Гештальт подходе" с Маргаритой Спаньола Лобб</a>
-                            </li>
-                            <li class="about__item">
-                                <a class="about__item list">Участник открытого воркшопа по "Терапевтическая коммуникация
-                                    в гештальт-терапии" с Мануелой Партенико</a>
+                                <a class="about__item list">Постоянный участник конференций и воркшопов по психологии</a>
+                            
                             </li>
                         </ul>
 
@@ -202,19 +191,61 @@ HERO PART ANASTASIA ENDS-------->
         </div>
     </section>
     <!----Gulya about me block END-------->
+    
+     <!----Julia VIDEO start--->
+   <section class="video wrapper">
+    <h2 class="video__title">Мой YOUTUBE-канал</h2>
+    <div class="video__container">
+        <div class="video__left-part">
+            <iframe class="video__content" width="400" height="250" src="https://www.youtube.com/embed/zoS75dCpvpI"
+                title="Стань чувствительным к себе" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <iframe class="video__content" width="400" height="250"
+                src="https://www.youtube.com/embed/zAVdSOz8EaY?list=PLpTJjjRSjJVYZ6NPlxkQvplAA_qJNMvMG"
+                title="АЙСУЛУ АЗИМБАЕВА | Сексуальность, риски и театр" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <iframe class="video__content" width="400" height="250"
+                src="https://www.youtube.com/embed/9ZQ8LCPb_Ss?list=PLpTJjjRSjJVZgAY1JQnGUzU57nZFREpGM"
+                title="подкаст SEBE #13:  Манифестация денег. Как стать богатым | Татьяна Ким" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+        <div class="video__right-part">
+            <div class="video__subtitle-content">
+                <p class="video__subtitle">Этот канал был создан мной, вдохновением
+                    делиться знаниями о психологии. После
+                    моих видео вы не только поймете сложные
+                    концепты из психологии, но сможете
+                    удачно и легко использовать их в своей жизни.<br><br>
+                    Я за осознанность, самообразование и
+                    развитие.</p>
+            </div>
+            <form class="video__form" action="https://www.youtube.com/@baktybala" target="_blank">
+                <button class="video__btn">Узнать больше</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!----Julia VIDEO end--->
+    
+
 
     <!----Nadya about guide block start-------->
 
-    <div class="about__guide">
+    <div class="about__guide wrapper">
         <h2>ГАЙД "БЛИЗОСТЬ"</h2>
         <p>Для тех, кто готов к аутентичной близости с партнером</p>
     </div>
 
     <!----Nadya about guide block end-------->
+    
 
 
     <!----Nadya about reviews block start-------->
-    <div class="container">
+    <div class="container wrapper">
         <h2 class="reviews__title">Отзывы о работе со мной</h2>
         <div class="reviews__top">
             <div class="review">
@@ -284,12 +315,12 @@ HERO PART ANASTASIA ENDS-------->
     <!----FOOTER PART MILA-------->
 
     <!--<div class="contacts">-->
-    <div class="contacts__left">
+    <div class="contacts__left ">
         <div class="contacts__header">
             <h3 class="contacts__header-text">Посетите мои странички в социальных сетях, чтобы записаться на
                 консультацию или узнать больше обо мне.</h3>
         </div>
-        <div class="contacts__media">
+        <!---<div class="contacts__media">
             <ul class="contacts__media-list">
                 <li class="contacts__list-item" style="--i:-2;--clr:#1da1f2;" data-text="Telegram"><a
                         href="https://t.me/baktybalaa" target="_blank"><span><i
@@ -304,20 +335,20 @@ HERO PART ANASTASIA ENDS-------->
                         href="https://www.youtube.com/channel/UCbUzwgNdhQ9DiFosSTzaGww/about" target="_blank"><span><i
                                 class="fa-brands fa-youtube"></i></span>Youtube</a></li>
             </ul>
-        </div>
+        </div> 
         <div class="contacts__email">
             <img class="contacts__email-img" src="./assets/img/ico/icon-email.png" alt="Email">
             <h4><a class="contacts__email-send" href="mailto:#" target="_blank">Отправьте мне сообщение по электронной
                     почте</a></h4>
         </div>
     </div>
-    <!--<div class="contacts__right">
+    <div class="contacts__right">
             <img class="contacts__right-picture" src="./assets/img/Photo_mountains.jpg" alt="">
         </div>-->
     <!--</div>-->
     <div class="footercontainer">
         <div class="footercontainer__copyright">
-            <p class="footercontainer__copyright-text1">©2023 Персональный сайт психолога. </p>
+            <p class="footercontainer__copyright-text1">©2023 Baktybala Персональный сайт психолога. </p>
             <p class="footercontainer__copyright-text2"> Копирование материалов сайта без разрешения правообладателя
                 запрещено. </p>
         </div>
@@ -335,7 +366,7 @@ HERO PART ANASTASIA ENDS-------->
                         href="https://www.youtube.com/channel/UCbUzwgNdhQ9DiFosSTzaGww/about" target="_blank"><img
                             class="social__youtube" src="./assets/img/ico/youtube-icon.svg" alt="youtube"></a></li>
             </ul>
-        </div>
+        </div> 
     </div>
     <div class="bottom">
         <p class="bottom__design"><a class="bottom__design-site" href="https://itgirlschool.com/"

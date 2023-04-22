@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
@@ -7,13 +8,22 @@ html {
 *::after {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
   background: #f4f4f4;
+  background: #f4f4f4;
 }
 
 h1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 28px;
+  font-family: "Playfair Display", serif;
+  color: #4d4d4d;
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
@@ -29,9 +39,18 @@ p {
   line-height: 28px;
   font-family: "Playfair Display", serif;
   color: #4d4d4d;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  font-family: "Playfair Display", serif;
+  color: #4d4d4d;
 }
 
 .wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 15px;
   max-width: 1300px;
   margin: 0 auto;
   padding: 0 15px;
@@ -40,10 +59,12 @@ p {
 p:hover,
 p:focus,
 h2:hover,
-h2:focus,
-li:hover,
-li:focus {
-  color: black;
+h2:focus {
+  opacity: 0.8;
+  transition: 0.8s;
+  transform: scale(1.03);
+}
+img:hover {
   opacity: 0.8;
 }
 
@@ -55,20 +76,20 @@ img:hover {
 .header {
   display: flex;
   flex-wrap: wrap;
-  height: 60px;
-  margin-bottom: 150px;
+  height: 86px;
+  justify-content: space-around;
 }
 
 .header__container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .header__left-part {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-right: 60px;
+  margin-right: 180px;
 }
 
 .header__logo {
@@ -115,6 +136,7 @@ img:hover {
 .header__link:focus,
 .header__link:active {
   opacity: 0.75;
+  transition: 0.1s;
 }
 
 .header__right-part {
@@ -129,12 +151,6 @@ img:hover {
 
 /* gamburger */
 
-@media screen and (min-width: 903px) {
-  .hamburger-menu {
-    display: none;
-  }
-}
-
 @media screen and (max-width: 903px) {
   .header__navigation {
     display: none;
@@ -142,7 +158,7 @@ img:hover {
 }
 
 #menu__toggle {
-  opacity: 0;
+  opacity: 0.1;
 }
 
 #menu__toggle:checked + .menu__btn > span {
@@ -186,12 +202,12 @@ img:hover {
 
 .menu__btn > span::before {
   content: "";
-  top: -8px;
+  top: -7px;
 }
 
 .menu__btn > span::after {
   content: "";
-  top: 8px;
+  top: 7px;
 }
 
 .menu__box {
@@ -213,7 +229,7 @@ img:hover {
 .menu__item {
   display: block;
   padding: 12px 24px;
-  color: white;
+  color: rgb(68, 66, 66);
   font-family: "Playfair Display", serif;
   font-size: 40px;
   font-weight: 400;
@@ -223,13 +239,6 @@ img:hover {
   z-index: 9;
 }
 
-.right-link {
-  padding-right: 32px;
-  color: black;
-  text-decoration: none;
-  transition: 0.2s all;
-}
-
 .menu__item:hover {
   background-color: #f4f4f4;
 }
@@ -237,6 +246,12 @@ img:hover {
 /*HERO PART ANASTASIA*/
 
 .hero__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 100%;
+  border-bottom: 1px solid #38383860;
+  margin-bottom: 70px;
   /*display: flex;
   flex-direction: row;
   justify-content: center;*/
@@ -447,10 +462,14 @@ img:hover {
 /*MYJOB PART ANASTASIA ENDS*/
 
 /*About me PART Gulya start*/
+
 .about__body {
-  max-width: 100%;
+  max-width: 1300px;
+
+  max-width: 1300px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 70px;
 }
 
 .about__title {
@@ -458,16 +477,22 @@ img:hover {
   justify-content: center;
 }
 
-.about__image {
-  width: 350px;
-  height: 200px;
-  border-radius: 8px;
+.about__title_education {
+  display: flex;
+  justify-content: left;
 }
 
+.about__image {
+  width: 450px;
+  height: 300px;
+}
+.about__article_title {
+  display: flex;
+  align-content: flex-end;
+}
 .about__content {
   display: flex;
-  justify-content: center;
-  gap: 20px;
+  align-items: center;
 }
 
 h2 {
@@ -478,23 +503,80 @@ h2 {
   font-family: "Playfair Display", serif;
   color: #4d4d4d;
 }
-
-.about__target {
-  border: 5px solid #4d4d4d;
-  padding: 10px;
-  width: 300px;
-  margin-top: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  border-radius: 8px;
+h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 28px;
+  font-family: "Playfair Display", serif;
+  color: #4d4d4d;
+}
+.about__article {
+  display: flex;
+  flex-direction: column;
 }
 
-.about__citation {
-  border: 5px solid #4d4d4d;
+.about__target {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border-radius: 10px;
   padding: 10px;
-  width: 300px;
-  margin-top: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  border-radius: 8px;
+  width: 500px;
+  height: 100px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  font-family: "Playfair Display", serif;
+  color: #f4f4f4;
+  background-color: #4d4d4d90;
+  margin-bottom: 10px;
+}
+.about__education {
+  width: 100%;
+}
+.about__target p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  font-family: "Playfair Display", serif;
+  color: #f4f4f4;
+}
+
+.about__citations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+.about__citation p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  font-family: "Playfair Display", serif;
+  color: #f4f4f4;
+}
+.about__citation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  width: 350px;
+  height: 150px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  font-family: "Playfair Display", serif;
+  color: white;
+  background-color: #4d4d4d90;
 }
 
 .about__item {
@@ -508,21 +590,387 @@ h2 {
 
 .about__education_title {
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 16px;
+  line-height: 30px;
+  font-family: "Playfair Display", serif;
+  color: #4d4d4d;
+  margin-top: 30px;
+}
+.about__education_title2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  font-family: "Playfair Display", serif;
+  color: #4d4d4d;
+  margin-top: 30px;
+  display: flex;
+}
+
+.about__article {
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+.about__aside {
+  margin-right: 70px;
+}
+.about__education_mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1300px) {
+  .about_education {
+    margin: 0;
+  }
+  .about__aside {
+    margin-right: 10px;
+  }
+  .about__article {
+    width: auto;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .about_education {
+    width: 499px;
+    margin-left: 0pxs;
+    font-size: smaller;
+  }
+  .about__article {
+    width: 550px;
+  }
+  .about {
+    margin-right: 50px;
+    margin-left: -20px;
+  }
+  .about__education_list {
+    margin-right: 60px;
+  }
+  .about__aside {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 902px) {
+  .about__content {
+    display: flex;
+    flex-direction: column;
+  }
+  .about__aside {
+    margin-right: 50px;
+  }
+  .about__title {
+    margin-right: 15%;
+  }
+  .about__article {
+    max-width: 550px;
+  }
+  .about__target {
+    width: 550px;
+    height: 100px;
+  }
+  .about__education {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 550px;
+  }
+
+  .about__image {
+    width: 550px;
+    height: 400px;
+  }
+
+  .about__citation {
+    width: 550px;
+    height: 150px;
+  }
+
+  .about__education_title2 {
+    display: none;
+  }
+  .about__education_list {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    width: 650px;
+  }
+  .about__education_mobile {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .about {
+    width: 100%;
+    margin-left: 70px;
+  }
+  .about__target {
+    margin-left: -80px;
+  }
+  .about__article {
+    margin-left: 30px;
+  }
+}
+@media screen and (max-width: 901px) {
+  .about__body {
+    display: flex;
+    margin-left: 0;
+    width: 100%;
+  }
+  .about__title {
+    margin-right: 30%;
+  }
+
+  .about__education {
+    display: none;
+  }
+  .about__education_mobile {
+    margin-right: 30%;
+  }
+  .about__image {
+    width: 320px;
+    height: 200px;
+  }
+  .about__aside {
+    display: flex;
+    flex-direction: column;
+    padding-right: 60px;
+    font-size: smaller;
+  }
+  .about__citation {
+    width: 320px;
+    height: 150px;
+    font-size: smaller;
+  }
+
+  .about__target {
+    width: 320px;
+    height: 100px;
+    font-size: smaller;
+    display: none;
+  }
+}
+
+/*About me PART Gulya end*/
+
+/* ====Viddeo start (Julia)*/
+
+.video {
+  margin-bottom: 100px;
+}
+
+.video__container {
+  display: flex;
+}
+
+.video__title {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+.video__left-part {
+  display: block;
+  margin-right: 8px;
+}
+
+.video__content {
+  margin-bottom: 20px;
+}
+
+.video__right-part {
+  max-width: 700px;
+}
+
+.video__subtitle-content {
+  padding: 10px;
+  border: 1px solid #444242;
+  margin-top: 200px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.video__subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
   line-height: 28px;
   font-family: "Playfair Display", serif;
   color: #4d4d4d;
 }
-@media screen and (min-width: 1700px) {
-  .about__body {
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
+
+.video__btn {
+  width: 300px;
+  height: 100px;
+  background-color: #4d4d4d90;
+  color: #fffbfb;
+  font-size: 25px;
+  border: 1px solid #404040;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.video__btn:hover,
+.video__btn:focus,
+.video__btn:active {
+  opacity: 0.75;
+}
+
+@media screen and (max-width: 780px) {
+  .video {
+    display: block;
+  }
+
+  .video__container {
+    display: block;
+  }
+
+  .video__title {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 30px;
+  }
+
+  .video__content {
+    margin: 10 auto;
+    text-align: center;
+  }
+
+  .video__subtitle-content {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .video__btn {
+    margin: auto;
+  }
+
+  .video__form {
+    text-align: center;
+  }
+
+  .video__content {
+    width: 100%;
+    height: 350px;
   }
 }
-/*About me PART Gulya end*/
+/* ====Viddeo start (Julia)*/
+.video {
+  margin-bottom: 100px;
+}
 
+.video__container {
+  display: flex;
+}
+
+.video__title {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+.video__left-part {
+  display: block;
+  margin-right: 8px;
+}
+
+.video__content {
+  margin-bottom: 20px;
+  opacity: 0.8;
+  filter: grayscale(100%);
+}
+
+.video__right-part {
+  max-width: 700px;
+}
+
+.video__subtitle-content {
+  padding: 10px;
+  border: 1px solid #444242;
+  margin-top: 200px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.video__subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  font-family: "Playfair Display", serif;
+  color: #4d4d4d;
+}
+
+.video__btn {
+  width: 300px;
+  height: 100px;
+  background-color: #4d4d4d90;
+  color: #fffbfb;
+  font-size: 25px;
+  border: 1px solid #404040;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.video__btn:hover,
+.video__btn:focus,
+.video__btn:active {
+  opacity: 0.75;
+}
+
+@media screen and (max-width: 780px) {
+  .video {
+    display: block;
+  }
+
+  .video__container {
+    display: block;
+  }
+
+  .video__title {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 30px;
+  }
+
+  .video__content {
+    margin: 10 auto;
+    text-align: center;
+  }
+
+  .video__subtitle-content {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .video__btn {
+    margin: auto;
+  }
+
+  .video__form {
+    text-align: center;
+  }
+
+  .video__content {
+    width: 100%;
+    height: 350px;
+  }
+}
 /*About guide Nadya start*/
 .about__guide {
   max-width: 1300px;
@@ -536,13 +984,14 @@ h2 {
   background-color: #5b554b90;
 }
 
-/*About guide Nadya end*/
+/*About me PART Gulya end*/
 
 /*About reviews Nadya start*/
 .container {
   margin-bottom: 40px;
   font-family: "Playfair Display", serif;
   color: #4d4d4d;
+  margin-bottom: 70px;
 }
 
 .reviews__title {
@@ -574,18 +1023,6 @@ h6 {
   color: #858687;
   text-align: end;
   margin: 10px;
-}
-
-@media screen and (max-width: 1200px) {
-  .reviews__top {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .reviews__bottom {
-    display: flex;
-    flex-wrap: wrap;
-  }
 }
 
 /*About reviews Nadya end*/
