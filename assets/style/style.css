@@ -675,7 +675,7 @@ height: 100px;
  .about__article {
     margin-left: 30px; 
  }}
- @media screen and (max-width: 499px) {
+ @media screen and (max-width: 901px) {
     .about__body {
     display: flex;
     margin-left: 0;
