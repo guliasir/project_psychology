@@ -1055,6 +1055,12 @@ h6 {
   text-align: center;
 }
 
+.contacts__media-list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
 .contacts__right-picture {
   width: 100%;
   max-width: 900px;
@@ -1072,6 +1078,9 @@ h6 {
   margin-right: 0.5%;
 }
 
+.contacts__media-telegram,
+.contacts__media-instagram,
+.contacts__media-whatsapp,
 .contacts__email-send,
 .bottom__design-site {
   font-style: normal;
@@ -1082,6 +1091,9 @@ h6 {
   color: #4d4d4d;
 }
 
+.contacts__media-telegram:hover,
+.contacts__media-instagram:hover,
+.contacts__media-whatsapp:hover,
 .contacts__email-send:hover {
   text-decoration: underline;
   color: #887c63;
@@ -1102,6 +1114,9 @@ h6 {
   cursor: pointer;
 }
 
+.social__instagram1,
+.social__telegram1,
+.social__whatsapp1,
 .social__whatsapp,
 .social__telegram,
 .social__instagram,
