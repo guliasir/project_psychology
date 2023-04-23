@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
@@ -7,9 +8,12 @@ html {
 *::after {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
+  background: #f4f4f4;
   background: #f4f4f4;
 }
 
@@ -18,7 +22,13 @@ h1 {
   font-weight: 400;
   font-size: 30px;
   line-height: 28px;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", serif;
+  color: #4d4d4d;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 28px;
+  font-family: "Montserrat", serif;
   color: #4d4d4d;
 }
 
@@ -27,11 +37,20 @@ p {
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", serif;
+  color: #4d4d4d;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  font-family: "Montserrat", serif;
   color: #4d4d4d;
 }
 
 .wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 15px;
   max-width: 1300px;
   margin: 0 auto;
   padding: 0 15px;
@@ -49,18 +68,21 @@ img:hover {
   opacity: 0.8;
 }
 
+img:hover {
+  opacity: 0.9;
+}
+
 /* header styles (julia)*/
 .header {
-    display: flex;
-    flex-wrap: wrap;
-    height: 86px;
-    justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  height: 86px;
+  justify-content: space-around;
 }
 
 .header__container {
-    display: flex;
-    justify-content: space-around;
-
+  display: flex;
+  justify-content: space-around;
 }
 
 .header__left-part {
@@ -101,7 +123,7 @@ img:hover {
 }
 
 .header__link {
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 19px;
@@ -118,8 +140,8 @@ img:hover {
 }
 
 .header__right-part {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .header__icon {
@@ -208,7 +230,7 @@ img:hover {
   display: block;
   padding: 12px 24px;
   color: rgb(68, 66, 66);
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", serif;
   font-size: 40px;
   font-weight: 400;
   text-decoration: none;
@@ -230,177 +252,213 @@ img:hover {
   max-width: 100%;
   border-bottom: 1px solid #38383860;
   margin-bottom: 70px;
+  /*display: flex;
+  flex-direction: row;
+  justify-content: center;*/
+  max-width: 100%;
+  height: 700px;
+  border-bottom: 1px solid #38383860;
+  margin-bottom: 70px;
+  background-image: url(/assets/img/hands_photo.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.hero__photo {
-  max-width: 600px;
+/*.hero__photo {
+  max-width: 100%;
+  max-height: 600px;
   margin-top: 32px;
-}
+}*/
 
 .hero__text {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
-  max-width: 50%;
-  margin-left: 64px;
-  margin-right: 32px;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
 }
 
 .hero__title {
-  margin-bottom: 250px;
+  margin-top: 100px;
+  margin-left: 700px;
   font-style: normal;
-  font-weight: 400;
-  font-size: 100px;
-  line-height: 28px;
-  font-family: "Playfair Display", serif;
-  color: #4d4d4d;
+  font-weight: 300;
+  font-size: 80px;
+  font-family: "Montserrat", serif;
+  letter-spacing: 0.15em;
+  color: #000000;
 }
 
 .hero__btn {
   text-align: center;
+  margin-right: 750px;
   border-radius: 10px;
   padding: 15px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   width: 300px;
   height: 70px;
   font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
+  font-weight: 100;
+  font-size: 16px;
   line-height: 36px;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", serif;
   background-color: #4d4d4d;
   outline: none;
 }
+
 .hero__btn a {
   text-decoration: none;
   color: #f4f4f4;
 }
+
 .hero__btn a:hover {
-color: #959393;
+  color: #959393;
 }
-.hero__citation {
+
+/*.hero__citation {
   display: flex;
   align-items: center;
   text-align: center;
   border-radius: 10px;
   padding: 15px;
   margin-bottom: 100px;
+  margin-top: 200px;
   width: 400px;
   height: 120px;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 36px;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", serif;
   color: #f4f4f4;
   background-color: #4d4d4d90;
-}
+}*/
 
-@media screen and (min-width: 903px) {
+/*@media screen and (min-width: 903px) {
   .hero__container-adaptation {
     display: none;
   }
-}
+}*/
 
 @media screen and (max-width: 902px) {
-  .hero__container {
+  /*.hero__container {
     display: none;
-  }
+  }*/
 
-    .hero__container {display: none}
-    .hero__container-adaptation {display: flex;
+  /*.hero__container-adaptation {
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     max-width: 100%;
     border-bottom: 1px solid #38383860;
-    }
-    .hero__citation {max-width: 600px;}
-    .hero__title {margin-bottom: 86px;}
-    .hero__photo {max-width: 450px;}
-    .hero__btn {margin-bottom: 0;}}
+  }
+
+  .hero__citation {
+    max-width: 600px;
+  }*/
+  .hero__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+  }
+  .hero__title {
+    margin-left: 0px;
+  }
+
+  .hero__btn {
+    margin-right: 0;
+    align-self: flex-start;
+  }
+}
 
 /*HERO PART ANASTASIA ENDS*/
 
 /*MYJOB PART ANASTASIA*/
 .Myjob__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.Myjob__left {
+  display: flex;
+  flex-direction: column;
+  margin-left: 32px;
+}
+
+.Myjob__citation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  padding: 15px;
+  width: 400px;
+  height: 150px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  font-family: "Montserrat", serif;
+  color: #f4f4f4;
+  background-color: #5b554b90;
+}
+
+.Myjob__citation p {
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  font-family: "Montserrat", serif;
+  color: #f4f4f4;
+}
+
+.Myjob__photo {
+  max-width: 450px;
+  margin-right: 32px;
+}
+
+.Myjob__left-list {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  font-family: "Montserrat", serif;
+  color: #4d4d4d;
+}
+
+@media screen and (max-width: 903px) {
+  .Myjob__container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    margin-bottom: 70px;
   }
-  
+
   .Myjob__left {
-    display: flex;
-    flex-direction: column;
-    margin-left: 32px;
+    margin-left: 0;
+    margin-bottom: 32px;
   }
-  
-  .Myjob__citation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    border-radius: 10px;
-    padding: 15px;
-    width: 400px;
-    height: 150px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 36px;
-    font-family: "Playfair Display", serif;
-    color: #f4f4f4;
-    background-color: #5b554b90;
-  }
-  
-  .Myjob__citation p {
-    margin: 0;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 36px;
-    font-family: "Playfair Display", serif;
-    color: #f4f4f4;
-  }
-  
+
   .Myjob__photo {
-    max-width: 450px;
-    margin-right: 32px;
+    margin-left: 0;
   }
-  
-  .Myjob__left-list {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 30px;
-    font-family: "Playfair Display", serif;
-    color: #4d4d4d;
+  .Myjob__citation {
+    align-self: center;
   }
-  
-  @media screen and (max-width: 903px) {
-    .Myjob__container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .Myjob__left {
-      margin-left: 0;
-      margin-bottom: 32px;
-    }
-  
-    .Myjob__photo {
-      margin-left: 0;
-    }
-  }
-  
-  .border {
-    width: 100%;
-    border-bottom: 1px solid #38383860;
-  }
+}
+
+.border {
+  width: 100%;
+  border-bottom: 1px solid #38383860;
+}
 /*MYJOB PART ANASTASIA ENDS*/
 
 /*About me PART Gulya start*/
@@ -408,11 +466,10 @@ color: #959393;
 .about__body {
   max-width: 1300px;
 
-    max-width: 1300px;
-   display: flex;
-   flex-direction: column;
-   margin-bottom: 70px;
-  
+  max-width: 1300px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 70px;
 }
 
 .about__title {
@@ -428,7 +485,6 @@ color: #959393;
 .about__image {
   width: 450px;
   height: 300px;
-
 }
 .about__article_title {
   display: flex;
@@ -437,17 +493,14 @@ color: #959393;
 .about__content {
   display: flex;
   align-items: center;
-  
-  
 }
-
 
 h2 {
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
   line-height: 28px;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", serif;
   color: #4d4d4d;
 }
 h3 {
@@ -455,7 +508,7 @@ h3 {
   font-weight: 700;
   font-size: 30px;
   line-height: 28px;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", serif;
   color: #4d4d4d;
 }
 .about__article {
@@ -477,20 +530,20 @@ h3 {
   font-weight: 400;
   font-size: 20px;
   line-height: 36px;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", serif;
   color: #f4f4f4;
   background-color: #4d4d4d90;
   margin-bottom: 10px;
 }
 .about__education {
-    width: 100%;
+  width: 100%;
 }
 .about__target p {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 36px;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", serif;
   color: #f4f4f4;
 }
 
@@ -505,27 +558,25 @@ h3 {
   font-weight: 400;
   font-size: 20px;
   line-height: 36px;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", serif;
   color: #f4f4f4;
 }
 .about__citation {
-    
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    border-radius: 10px;
-    padding: 10px;
-    width: 350px;
-    height: 150px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 36px;
-    font-family: 'Playfair Display', serif;
-    color: white;
-    background-color: #4d4d4d90;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  width: 350px;
+  height: 150px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  font-family: "Montserrat", serif;
+  color: white;
+  background-color: #4d4d4d90;
 }
 
 .about__item {
@@ -533,197 +584,177 @@ h3 {
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", serif;
   color: #4d4d4d;
 }
 
 .about__education_title {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 30px;
-    font-family: 'Playfair Display', serif;
-    color: #4d4d4d;
-    margin-top: 30px;
-
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  font-family: "Montserrat", serif;
+  color: #4d4d4d;
+  margin-top: 30px;
 }
 .about__education_title2 {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 30px;
-    font-family: 'Playfair Display', serif;
-    color: #4d4d4d;
-    margin-top: 30px;
-    display: flex;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  font-family: "Montserrat", serif;
+  color: #4d4d4d;
+  margin-top: 30px;
+  display: flex;
 }
 
 .about__article {
-    width: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
 }
-   .about__aside {
-    margin-right: 70px;
-   }
-   .about__education_mobile {
-    display: none;
-   }
+.about__aside {
+  margin-right: 70px;
+}
+.about__education_mobile {
+  display: none;
+}
 
-   @media screen and (max-width: 1300px) {
-    .about_education {
-        margin: 0;
-   }
-   .about__aside {
+@media screen and (max-width: 1300px) {
+  .about_education {
+    margin: 0;
+  }
+  .about__aside {
     margin-right: 10px;
-   }
+  }
   .about__article {
     width: auto;
   }
-  
 }
 @media screen and (max-width: 1150px) {
-    .about_education {
-        width: 499px;
-        margin-left: 0pxs;
-        font-size: smaller;
-    }
-    .about__article {
-        width: 550px;
-   
-}
- .about {
+  .about_education {
+    width: 499px;
+    margin-left: 0pxs;
+    font-size: smaller;
+  }
+  .about__article {
+    width: 550px;
+  }
+  .about {
     margin-right: 50px;
     margin-left: -20px;
- }
- .about__education_list{
- 
+  }
+  .about__education_list {
     margin-right: 60px;
- }
- .about__aside {
+  }
+  .about__aside {
     margin-left: 0px;
- }
- }
-
-   @media screen and (max-width: 902px) {
-    .about__content {
-display: flex;
-flex-direction: column;
-
-    }
-.about__aside {
-    margin-right: 50px;
+  }
 }
- .about__title {
-margin-right: 15%;
 
-    }
- .about__article {
+@media screen and (max-width: 902px) {
+  .about__content {
+    display: flex;
+    flex-direction: column;
+  }
+  .about__aside {
+    margin-right: 50px;
+  }
+  .about__title {
+    margin-right: 15%;
+  }
+  .about__article {
     max-width: 550px;
- }
-.about__target {
-
-width: 550px;
-height: 100px;
-   }
-.about__education {
+  }
+  .about__target {
+    width: 550px;
+    height: 100px;
+  }
+  .about__education {
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 550px;
-}
-
-.about__image {
-    width: 550px;
-    height: 400px;
-    
   }
 
+  .about__image {
+    width: 550px;
+    height: 400px;
+  }
 
   .about__citation {
     width: 550px;
     height: 150px;
- 
-  
-}
+  }
 
-.about__education_title2 {
-   display: none;
-}
-.about__education_list {
-   display: flex;
-   flex-direction: column;
-   margin-left: 50px;
-   width: 650px;
-}
-.about__education_mobile {
+  .about__education_title2 {
+    display: none;
+  }
+  .about__education_list {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    width: 650px;
+  }
+  .about__education_mobile {
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
-}}
+  }
+}
 
-   @media screen and (max-width: 500px) {
-    .about {
-        width: 100%;
-        margin-left: 70px;
-        
-    }
-    .about__target {
-      margin-left: -80px;
-    }
- .about__article {
-    margin-left: 30px; 
- }}
- @media screen and (max-width: 901px) {
-    .about__body {
+@media screen and (max-width: 500px) {
+  .about {
+    width: 100%;
+    margin-left: 70px;
+  }
+  .about__target {
+    margin-left: -80px;
+  }
+  .about__article {
+    margin-left: 30px;
+  }
+}
+@media screen and (max-width: 901px) {
+  .about__body {
     display: flex;
     margin-left: 0;
     width: 100%;
-      
-    }
-    .about__title {
-       margin-right: 30%;
-    }
- 
-    .about__education {
-     display: none;
-    }
- .about__education_mobile {
+  }
+  .about__title {
     margin-right: 30%;
+  }
 
- 
- }
- .about__image {
+  .about__education {
+    display: none;
+  }
+  .about__education_mobile {
+    margin-right: 30%;
+  }
+  .about__image {
     width: 320px;
     height: 200px;
-      
-}
-.about__aside {
-   display: flex;
-   flex-direction: column;
-   padding-right: 60px;
-   font-size: smaller;
-}
-.about__citation {
+  }
+  .about__aside {
+    display: flex;
+    flex-direction: column;
+    padding-right: 60px;
+    font-size: smaller;
+  }
+  .about__citation {
     width: 320px;
     height: 150px;
-    font-size: smaller;}
+    font-size: smaller;
+  }
 
-.about__target {
+  .about__target {
     width: 320px;
     height: 100px;
     font-size: smaller;
     display: none;
-
+  }
 }
-
-  
-}
-
-
-
-
 
 /*About me PART Gulya end*/
 
@@ -773,7 +804,7 @@ height: 100px;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", serif;
   color: #4d4d4d;
 }
 
@@ -782,7 +813,8 @@ height: 100px;
   height: 100px;
   background-color: #4d4d4d90;
   color: #fffbfb;
-  font-size: 25px;
+  font-family: "Montserrat", serif;
+  font-size: 18px;
   border: 1px solid #404040;
   cursor: pointer;
   border-radius: 10px;
@@ -880,7 +912,7 @@ height: 100px;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", serif;
   color: #4d4d4d;
 }
 
@@ -948,18 +980,17 @@ height: 100px;
   padding: 5px;
   text-align: center;
   border-radius: 10px;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", serif;
   color: #f4f4f4;
   background-color: #5b554b90;
 }
 
 /*About me PART Gulya end*/
 
-
 /*About reviews Nadya start*/
 .container {
   margin-bottom: 40px;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", serif;
   color: #4d4d4d;
   margin-bottom: 70px;
 }
@@ -1019,7 +1050,7 @@ h6 {
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", serif;
   color: #4d4d4d;
   text-align: center;
 }
@@ -1046,7 +1077,7 @@ h6 {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", serif;
   text-decoration: none;
   color: #4d4d4d;
 }
