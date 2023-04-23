@@ -428,6 +428,7 @@ img:hover {
 .about__title {
   display: flex;
   justify-content: center;
+  margin-top: 10%;
 }
 
 .about__title_education {
@@ -436,7 +437,7 @@ img:hover {
 }
 
 .about__image {
-  width: 310px;
+  width: 350px;
   height: 400px;
 }
 .about__article_title {
@@ -515,7 +516,7 @@ h3 {
   text-align: center;
   border-radius: 10px;
   padding: 5px;
-  width: 310px;
+  width: 370px;
   height: 180px;
   font-style: normal;
   font-weight: 380;
@@ -569,140 +570,92 @@ h3 {
   display: none;
 }
 
-@media screen and (max-width: 1300px) {
-  .about_education {
-    margin: 0;
-  }
-  .about__aside {
-    margin-right: 10px;
-  }
-  .about__article {
-    width: auto;
-  }
+.about__mobile_list {
+  display: none;
 }
-@media screen and (max-width: 1150px) {
-  .about_education {
-    width: 499px;
-    margin-left: 0pxs;
-    font-size: smaller;
-  }
-  .about__article {
-    width: 550px;
-  }
-  .about {
-    margin-right: 50px;
-    margin-left: -20px;
-  }
-  .about__education_list {
-    margin-right: 60px;
-  }
-  .about__aside {
-    margin-left: 0px;
-  }
+.about__mobile_content {
+  display: none;
 }
 
-@media screen and (max-width: 902px) {
-  .about__content {
-    display: flex;
-    flex-direction: column;
-  }
-  .about__aside {
-    margin-right: 50px;
-  }
-  .about__title {
-    margin-right: 15%;
-  }
-  .about__article {
-    max-width: 550px;
-  }
-  .about__target {
-    width: 550px;
-    height: 100px;
-  }
-  .about__education {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 550px;
-  }
+@media screen and (max-width: 960px) {
+  .about__body {
+    padding-left: 15px;
+}
+}
 
-  .about__image {
-    width: 550px;
-    height: 400px;
-  }
+@media screen and (max-width: 1199px) {
+  .about__body {
+   margin-left: 15px;
+  }}
 
-  .about__citation {
-    width: 550px;
-    height: 150px;
+@media screen and (max-width: 903px) {
+  .about__body {
+    height:max-content;
   }
-
   .about__education_title2 {
     display: none;
   }
-  .about__education_list {
-    display: flex;
-    flex-direction: column;
-    margin-left: 50px;
-    width: 650px;
-  }
-  .about__education_mobile {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .about {
-    width: 100%;
-    margin-left: 70px;
-  }
-  .about__target {
-    margin-left: -80px;
-  }
-  .about__article {
-    margin-left: 30px;
-  }
-}
-@media screen and (max-width: 901px) {
-  .about__body {
-    display: flex;
-    margin-left: 0;
-    width: 100%;
-  }
-  .about__title {
-    margin-right: 30%;
-  }
-
   .about__education {
     display: none;
   }
-  .about__education_mobile {
-    margin-right: 30%;
-  }
-  .about__image {
-    width: 320px;
-    height: 200px;
-  }
-  .about__aside {
-    display: flex;
-    flex-direction: column;
-    padding-right: 60px;
-    font-size: smaller;
-  }
-  .about__citation {
-    width: 320px;
-    height: 150px;
-    font-size: smaller;
-  }
-
   .about__target {
-    width: 320px;
-    height: 100px;
-    font-size: smaller;
     display: none;
   }
+  .about__mobile_list {
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    text-align:justify;
+    align-items: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    font-family: "Montserrat", serif;
+    color: #4d4d4d;
+  }
+  .mobile__wrapper {
+    display: flex;
+  }
+  .about__mobile_content {
+    display: flex;
+    justify-content: center;
+  }
+  
+.about__body {
+  justify-content: center;
+  flex-direction: row;
 }
+.about__citation {
+  height: 150px;
+  width: 410px;
+}
+.about__title {
+  margin-right: 20px;
+}
+.about__image {
+  width: 400px;
+  height: 450px;
+}
+
+}
+@media screen and (max-width: 540px) {
+  .about__body {
+padding-left: 40px;
+   
+  }}
+  @media screen and (max-width: 450px) {
+    .about__aside {padding-left: 30px;
+    }
+    .about__mobile_content {
+      padding-left: 20px;
+    }
+    }
+    @media screen and (max-width: 420px) {
+      .about__body {
+        margin-left: 130px;
+      }}
+
 
 /*About me PART Gulya end*/
 
