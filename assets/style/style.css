@@ -243,8 +243,6 @@ img:hover {
   background-color: #f4f4f4;
 }
 
-
-
 /*HERO PART ANASTASIA*/
 
 .hero__container {
@@ -277,7 +275,7 @@ img:hover {
   margin-left: 700px;
   font-style: normal;
   font-weight: 300;
-  font-size: 80px;
+  font-size: 60px;
   font-family: "Montserrat", serif;
   letter-spacing: 0.15em;
   color: #000000;
@@ -292,41 +290,24 @@ img:hover {
   width: 300px;
   height: 70px;
   font-style: normal;
-  font-weight: 100;
+  font-weight: 400;
   font-size: 16px;
   line-height: 36px;
   font-family: "Montserrat", serif;
-  background-color: #4d4d4d;
+  background-color: #4d4d4d01;
+  opacity: 100%;
+  border: 1px solid #4d4d4d;
   outline: none;
 }
 
 .hero__btn a {
   text-decoration: none;
-  color: #f4f4f4;
+  color: #050505;
 }
 
 .hero__btn a:hover {
   color: #959393;
 }
-
-/*.hero__citation {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  border-radius: 10px;
-  padding: 15px;
-  margin-bottom: 100px;
-  margin-top: 200px;
-  width: 400px;
-  height: 120px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 36px;
-  font-family: "Montserrat", serif;
-  color: #f4f4f4;
-  background-color: #4d4d4d90;
-}*/
 
 @media screen and (max-width: 902px) {
   .hero__text {
@@ -517,7 +498,6 @@ h3 {
   font-family: "Montserrat", serif;
   color: #f4f4f4;
 }
-
 
 .about__citation p {
   font-style: normal;
