@@ -61,7 +61,7 @@ p:focus,
 h2:hover,
 h2:focus {
   opacity: 0.8;
-  transition: 0.8s;
+  transition: 0.8s ease-out;
   transform: scale(1.03);
 }
 
@@ -69,25 +69,17 @@ img:hover {
   opacity: 0.8;
 }
 
-img:hover {
-  opacity: 0.9;
-}
-
 /* header styles (julia)*/
 .header {
   display: flex;
   flex-wrap: wrap;
-  height: 86px;
-  justify-content: space-around;
-  display: flex;
-  flex-wrap: wrap;
-  height: 86px;
-  justify-content: space-around;
+  height: 53px;
+  justify-content: space-between;
 }
 
 .header__container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 
 }
 
@@ -95,7 +87,6 @@ img:hover {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-right: 180px;
 }
 
 .header__logo {
@@ -150,6 +141,7 @@ img:hover {
   align-items: center;
   display: flex;
   align-items: center;
+  margin-right: 97px;
 }
 
 .header__icon {
@@ -682,8 +674,7 @@ h3 {
     margin-left: 0px;
   }
 }
-}
-}
+
 
 @media screen and (max-width: 902px) {
   .about__content {
@@ -750,8 +741,7 @@ h3 {
     margin-bottom: 30px;
   }
 }
-}
-}
+
 
 @media screen and (max-width: 500px) {
   .about {
@@ -833,30 +823,23 @@ h3 {
   margin-bottom: 100px;
 }
 
-.video__container {
-  display: flex;
-  flex-direction: column;
-}
+
 
 .video__title {
   text-align: center;
-
 }
 
-.video__left-part {
+.video__container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-bottom: 50px;
 }
 
-.video__content {
-  margin-bottom: 20px;
-  margin-right: 35px;
-}
+
 
 
 .video__subtitle {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   padding: 10px;
   border: 1px solid #444242;
   text-align: center;
@@ -891,9 +874,11 @@ h3 {
 .video__btn:focus,
 .video__btn:active {
   opacity: 0.75;
+  transform: scale(1.03);
+  transition: 0.8s ease-out;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 1200px) {
   .video {
     display: block;
   }
@@ -929,6 +914,12 @@ h3 {
   .video__content {
     width: 100%;
     height: 350px;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .video__content {
+    max-width: 200;
   }
 }
 
@@ -1001,7 +992,7 @@ h3 {
   opacity: 0.75;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 1200px) {
   .video {
     display: block;
   }
@@ -1037,6 +1028,12 @@ h3 {
   .video__content {
     width: 100%;
     height: 350px;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .video__content {
+    max-width: 200;
   }
 }
 
