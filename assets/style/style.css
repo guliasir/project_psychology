@@ -56,40 +56,38 @@ p {
   padding: 0 15px;
 }
 
+
 p:hover,
 p:focus,
 h2:hover,
 h2:focus {
   opacity: 0.8;
-  transition: 0.8s;
+  transition: 0.8s ease-out;
   transform: scale(1.03);
-}
-img:hover {
-  opacity: 0.8;
 }
 
 img:hover {
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 /* header styles (julia)*/
 .header {
   display: flex;
   flex-wrap: wrap;
-  height: 86px;
-  justify-content: space-around;
+  height: 53px;
+  justify-content: space-between;
 }
 
 .header__container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+
 }
 
 .header__left-part {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-right: 180px;
 }
 
 .header__logo {
@@ -142,6 +140,9 @@ img:hover {
 .header__right-part {
   display: flex;
   align-items: center;
+  display: flex;
+  align-items: center;
+  margin-right: 97px;
 }
 
 .header__icon {
@@ -161,21 +162,21 @@ img:hover {
   opacity: 0.1;
 }
 
-#menu__toggle:checked + .menu__btn > span {
+#menu__toggle:checked+.menu__btn>span {
   transform: rotate(45deg);
 }
 
-#menu__toggle:checked + .menu__btn > span::before {
+#menu__toggle:checked+.menu__btn>span::before {
   top: 0;
   transform: rotate(0deg);
 }
 
-#menu__toggle:checked + .menu__btn > span::after {
+#menu__toggle:checked+.menu__btn>span::after {
   top: 0;
   transform: rotate(90deg);
 }
 
-#menu__toggle:checked ~ .menu__box {
+#menu__toggle:checked~.menu__box {
   left: 0 !important;
 }
 
@@ -189,9 +190,9 @@ img:hover {
   z-index: 11;
 }
 
-.menu__btn > span,
-.menu__btn > span::before,
-.menu__btn > span::after {
+.menu__btn>span,
+.menu__btn>span::before,
+.menu__btn>span::after {
   display: block;
   position: absolute;
   width: 100%;
@@ -200,12 +201,12 @@ img:hover {
   transition-duration: 0.25s;
 }
 
-.menu__btn > span::before {
+.menu__btn>span::before {
   content: "";
   top: -7px;
 }
 
-.menu__btn > span::after {
+.menu__btn>span::after {
   content: "";
   top: 7px;
 }
@@ -707,46 +708,23 @@ h3 {
 
 /* ====Viddeo start (Julia)*/
 
-.video {
-  margin-bottom: 100px;
+.video__title {
+  text-align: center;
 }
 
 .video__container {
   display: flex;
-}
-
-.video__title {
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 60px;
-}
-
-.video__left-part {
-  display: block;
-  margin-right: 8px;
-}
-
-.video__content {
-  margin-bottom: 20px;
-}
-
-.video__right-part {
-  max-width: 700px;
-}
-
-.video__subtitle-content {
-  padding: 10px;
-  border: 1px solid #444242;
-  margin-top: 200px;
-  margin-bottom: 80px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  justify-content: space-between;
+  margin-bottom: 50px;
 }
 
 .video__subtitle {
+  margin-bottom: 50px;
+  padding: 10px;
+  border: 1px solid #444242;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -756,6 +734,8 @@ h3 {
 }
 
 .video__btn {
+  margin-left: 35%;
+  text-align: center;
   width: 300px;
   height: 100px;
   background-color: #4d4d4d90;
@@ -772,47 +752,11 @@ h3 {
 .video__btn:focus,
 .video__btn:active {
   opacity: 0.75;
+  transform: scale(1.03);
+  transition: 0.8s ease-out;
 }
 
-@media screen and (max-width: 780px) {
-  .video {
-    display: block;
-  }
 
-  .video__container {
-    display: block;
-  }
-
-  .video__title {
-    text-align: center;
-    margin-top: 70px;
-    margin-bottom: 30px;
-  }
-
-  .video__content {
-    margin: 10 auto;
-    text-align: center;
-  }
-
-  .video__subtitle-content {
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-
-  .video__btn {
-    margin: auto;
-  }
-
-  .video__form {
-    text-align: center;
-  }
-
-  .video__content {
-    width: 100%;
-    height: 350px;
-  }
-}
-/* ====Viddeo start (Julia)*/
 .video {
   margin-bottom: 100px;
 }
@@ -875,13 +819,8 @@ h3 {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.video__btn:hover,
-.video__btn:focus,
-.video__btn:active {
-  opacity: 0.75;
-}
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 1245px) {
   .video {
     display: block;
   }
@@ -916,8 +855,23 @@ h3 {
 
   .video__content {
     width: 100%;
-    height: 350px;
+    height: 100% auto;
   }
+}
+
+@media screen and (max-width: 615px) {
+  .video__content {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .video__btn {
+    width: 240px;
+  }
+
 }
 /*About guide Nadya start*/
 .about__guide {
