@@ -45,21 +45,22 @@ h2:focus {
   transition: 0.8s;
   transform: scale(1.03);
 }
+
 img:hover {
   opacity: 0.8;
 }
 
 /* header styles (julia)*/
 .header {
-    display: flex;
-    flex-wrap: wrap;
-    height: 86px;
-    justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  height: 86px;
+  justify-content: space-around;
 }
 
 .header__container {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 
 }
 
@@ -118,8 +119,8 @@ img:hover {
 }
 
 .header__right-part {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .header__icon {
@@ -139,21 +140,21 @@ img:hover {
   opacity: 0.1;
 }
 
-#menu__toggle:checked + .menu__btn > span {
+#menu__toggle:checked+.menu__btn>span {
   transform: rotate(45deg);
 }
 
-#menu__toggle:checked + .menu__btn > span::before {
+#menu__toggle:checked+.menu__btn>span::before {
   top: 0;
   transform: rotate(0deg);
 }
 
-#menu__toggle:checked + .menu__btn > span::after {
+#menu__toggle:checked+.menu__btn>span::after {
   top: 0;
   transform: rotate(90deg);
 }
 
-#menu__toggle:checked ~ .menu__box {
+#menu__toggle:checked~.menu__box {
   left: 0 !important;
 }
 
@@ -167,9 +168,9 @@ img:hover {
   z-index: 11;
 }
 
-.menu__btn > span,
-.menu__btn > span::before,
-.menu__btn > span::after {
+.menu__btn>span,
+.menu__btn>span::before,
+.menu__btn>span::after {
   display: block;
   position: absolute;
   width: 100%;
@@ -178,12 +179,12 @@ img:hover {
   transition-duration: 0.25s;
 }
 
-.menu__btn > span::before {
+.menu__btn>span::before {
   content: "";
   top: -7px;
 }
 
-.menu__btn > span::after {
+.menu__btn>span::after {
   content: "";
   top: 7px;
 }
@@ -272,13 +273,16 @@ img:hover {
   background-color: #4d4d4d;
   outline: none;
 }
+
 .hero__btn a {
   text-decoration: none;
   color: #f4f4f4;
 }
+
 .hero__btn a:hover {
-color: #959393;
+  color: #959393;
 }
+
 .hero__citation {
   display: flex;
   align-items: center;
@@ -308,99 +312,117 @@ color: #959393;
     display: none;
   }
 
-    .hero__container {display: none}
-    .hero__container-adaptation {display: flex;
+  .hero__container {
+    display: none
+  }
+
+  .hero__container-adaptation {
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     max-width: 100%;
     border-bottom: 1px solid #38383860;
-    }
-    .hero__citation {max-width: 600px;}
-    .hero__title {margin-bottom: 86px;}
-    .hero__photo {max-width: 450px;}
-    .hero__btn {margin-bottom: 0;}}
+  }
+
+  .hero__citation {
+    max-width: 600px;
+  }
+
+  .hero__title {
+    margin-bottom: 86px;
+  }
+
+  .hero__photo {
+    max-width: 450px;
+  }
+
+  .hero__btn {
+    margin-bottom: 0;
+  }
+}
 
 /*HERO PART ANASTASIA ENDS*/
 
 /*MYJOB PART ANASTASIA*/
 .Myjob__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.Myjob__left {
+  display: flex;
+  flex-direction: column;
+  margin-left: 32px;
+}
+
+.Myjob__citation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  padding: 15px;
+  width: 400px;
+  height: 150px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  font-family: "Playfair Display", serif;
+  color: #f4f4f4;
+  background-color: #5b554b90;
+}
+
+.Myjob__citation p {
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  font-family: "Playfair Display", serif;
+  color: #f4f4f4;
+}
+
+.Myjob__photo {
+  max-width: 450px;
+  margin-right: 32px;
+}
+
+.Myjob__left-list {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  font-family: "Playfair Display", serif;
+  color: #4d4d4d;
+}
+
+@media screen and (max-width: 903px) {
+  .Myjob__container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    margin-bottom: 70px;
   }
-  
+
   .Myjob__left {
-    display: flex;
-    flex-direction: column;
-    margin-left: 32px;
+    margin-left: 0;
+    margin-bottom: 32px;
   }
-  
-  .Myjob__citation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    border-radius: 10px;
-    padding: 15px;
-    width: 400px;
-    height: 150px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 36px;
-    font-family: "Playfair Display", serif;
-    color: #f4f4f4;
-    background-color: #5b554b90;
-  }
-  
-  .Myjob__citation p {
-    margin: 0;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 36px;
-    font-family: "Playfair Display", serif;
-    color: #f4f4f4;
-  }
-  
+
   .Myjob__photo {
-    max-width: 450px;
-    margin-right: 32px;
+    margin-left: 0;
   }
-  
-  .Myjob__left-list {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 30px;
-    font-family: "Playfair Display", serif;
-    color: #4d4d4d;
-  }
-  
-  @media screen and (max-width: 903px) {
-    .Myjob__container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .Myjob__left {
-      margin-left: 0;
-      margin-bottom: 32px;
-    }
-  
-    .Myjob__photo {
-      margin-left: 0;
-    }
-  }
-  
-  .border {
-    width: 100%;
-    border-bottom: 1px solid #38383860;
-  }
+}
+
+.border {
+  width: 100%;
+  border-bottom: 1px solid #38383860;
+}
+
 /*MYJOB PART ANASTASIA ENDS*/
 
 /*About me PART Gulya start*/
@@ -408,11 +430,11 @@ color: #959393;
 .about__body {
   max-width: 1300px;
 
-    max-width: 1300px;
-   display: flex;
-   flex-direction: column;
-   margin-bottom: 70px;
-  
+  max-width: 1300px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 70px;
+
 }
 
 .about__title {
@@ -430,15 +452,17 @@ color: #959393;
   height: 300px;
 
 }
+
 .about__article_title {
   display: flex;
   align-content: flex-end;
 }
+
 .about__content {
   display: flex;
   align-items: center;
-  
-  
+
+
 }
 
 
@@ -450,6 +474,7 @@ h2 {
   font-family: "Playfair Display", serif;
   color: #4d4d4d;
 }
+
 h3 {
   font-style: normal;
   font-weight: 700;
@@ -458,6 +483,7 @@ h3 {
   font-family: "Playfair Display", serif;
   color: #4d4d4d;
 }
+
 .about__article {
   display: flex;
   flex-direction: column;
@@ -482,9 +508,11 @@ h3 {
   background-color: #4d4d4d90;
   margin-bottom: 10px;
 }
+
 .about__education {
-    width: 100%;
+  width: 100%;
 }
+
 .about__target p {
   font-style: normal;
   font-weight: 400;
@@ -500,6 +528,7 @@ h3 {
   align-items: center;
   margin-top: 15px;
 }
+
 .about__citation p {
   font-style: normal;
   font-weight: 400;
@@ -508,24 +537,25 @@ h3 {
   font-family: "Playfair Display", serif;
   color: #f4f4f4;
 }
-.about__citation {
-    
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    border-radius: 10px;
-    padding: 10px;
-    width: 350px;
-    height: 150px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 36px;
-    font-family: 'Playfair Display', serif;
-    color: white;
-    background-color: #4d4d4d90;
+.about__citation {
+
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  width: 350px;
+  height: 150px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  font-family: 'Playfair Display', serif;
+  color: white;
+  background-color: #4d4d4d90;
 }
 
 .about__item {
@@ -538,187 +568,215 @@ h3 {
 }
 
 .about__education_title {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 30px;
-    font-family: 'Playfair Display', serif;
-    color: #4d4d4d;
-    margin-top: 30px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  font-family: 'Playfair Display', serif;
+  color: #4d4d4d;
+  margin-top: 30px;
 
 }
+
 .about__education_title2 {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 30px;
-    font-family: 'Playfair Display', serif;
-    color: #4d4d4d;
-    margin-top: 30px;
-    display: flex;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  font-family: 'Playfair Display', serif;
+  color: #4d4d4d;
+  margin-top: 30px;
+  display: flex;
 }
 
 .about__article {
-    width: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
 }
-   .about__aside {
-    margin-right: 70px;
-   }
-   .about__education_mobile {
-    display: none;
-   }
 
-   @media screen and (max-width: 1300px) {
-    .about_education {
-        margin: 0;
-   }
-   .about__aside {
+.about__aside {
+  margin-right: 70px;
+}
+
+.about__education_mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1300px) {
+  .about_education {
+    margin: 0;
+  }
+
+  .about__aside {
     margin-right: 10px;
-   }
+  }
+
   .about__article {
     width: auto;
   }
-  
+
 }
+
 @media screen and (max-width: 1150px) {
-    .about_education {
-        width: 499px;
-        margin-left: 0pxs;
-        font-size: smaller;
-    }
-    .about__article {
-        width: 550px;
-   
-}
- .about {
+  .about_education {
+    width: 499px;
+    margin-left: 0pxs;
+    font-size: smaller;
+  }
+
+  .about__article {
+    width: 550px;
+
+  }
+
+  .about {
     margin-right: 50px;
     margin-left: -20px;
- }
- .about__education_list{
- 
+  }
+
+  .about__education_list {
+
     margin-right: 60px;
- }
- .about__aside {
+  }
+
+  .about__aside {
     margin-left: 0px;
- }
- }
-
-   @media screen and (max-width: 902px) {
-    .about__content {
-display: flex;
-flex-direction: column;
-
-    }
-.about__aside {
-    margin-right: 50px;
+  }
 }
- .about__title {
-margin-right: 15%;
 
-    }
- .about__article {
+@media screen and (max-width: 902px) {
+  .about__content {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .about__aside {
+    margin-right: 50px;
+  }
+
+  .about__title {
+    margin-right: 15%;
+
+  }
+
+  .about__article {
     max-width: 550px;
- }
-.about__target {
+  }
 
-width: 550px;
-height: 100px;
-   }
-.about__education {
+  .about__target {
+
+    width: 550px;
+    height: 100px;
+  }
+
+  .about__education {
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 550px;
-}
+  }
 
-.about__image {
+  .about__image {
     width: 550px;
     height: 400px;
-    
+
   }
 
 
   .about__citation {
     width: 550px;
     height: 150px;
- 
-  
-}
 
-.about__education_title2 {
-   display: none;
-}
-.about__education_list {
-   display: flex;
-   flex-direction: column;
-   margin-left: 50px;
-   width: 650px;
-}
-.about__education_mobile {
+
+  }
+
+  .about__education_title2 {
+    display: none;
+  }
+
+  .about__education_list {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    width: 650px;
+  }
+
+  .about__education_mobile {
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
-}}
+  }
+}
 
-   @media screen and (max-width: 500px) {
-    .about {
-        width: 100%;
-        margin-left: 70px;
-        
-    }
-    .about__target {
-      margin-left: -80px;
-    }
- .about__article {
-    margin-left: 30px; 
- }}
- @media screen and (max-width: 901px) {
-    .about__body {
+@media screen and (max-width: 500px) {
+  .about {
+    width: 100%;
+    margin-left: 70px;
+
+  }
+
+  .about__target {
+    margin-left: -80px;
+  }
+
+  .about__article {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 901px) {
+  .about__body {
     display: flex;
     margin-left: 0;
     width: 100%;
-      
-    }
-    .about__title {
-       margin-right: 30%;
-    }
- 
-    .about__education {
-     display: none;
-    }
- .about__education_mobile {
+
+  }
+
+  .about__title {
+    margin-right: 30%;
+  }
+
+  .about__education {
+    display: none;
+  }
+
+  .about__education_mobile {
     margin-right: 30%;
 
- 
- }
- .about__image {
+
+  }
+
+  .about__image {
     width: 320px;
     height: 200px;
-      
-}
-.about__aside {
-   display: flex;
-   flex-direction: column;
-   padding-right: 60px;
-   font-size: smaller;
-}
-.about__citation {
+
+  }
+
+  .about__aside {
+    display: flex;
+    flex-direction: column;
+    padding-right: 60px;
+    font-size: smaller;
+  }
+
+  .about__citation {
     width: 320px;
     height: 150px;
-    font-size: smaller;}
+    font-size: smaller;
+  }
 
-.about__target {
+  .about__target {
     width: 320px;
     height: 100px;
     font-size: smaller;
     display: none;
 
-}
+  }
 
-  
+
 }
 
 
@@ -735,40 +793,33 @@ height: 100px;
 
 .video__container {
   display: flex;
+  flex-direction: column;
 }
 
 .video__title {
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 60px;
+
 }
 
 .video__left-part {
-  display: block;
-  margin-right: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .video__content {
   margin-bottom: 20px;
+  margin-right: 35px;
 }
 
-.video__right-part {
-  max-width: 700px;
-}
-
-.video__subtitle-content {
-  padding: 10px;
-  border: 1px solid #444242;
-  margin-top: 200px;
-  margin-bottom: 80px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
 
 .video__subtitle {
+  margin-bottom: 40px;
+  padding: 10px;
+  border: 1px solid #444242;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -777,7 +828,11 @@ height: 100px;
   color: #4d4d4d;
 }
 
+
+
 .video__btn {
+  margin-left: 35%;
+  text-align: center;
   width: 300px;
   height: 100px;
   background-color: #4d4d4d90;
@@ -833,6 +888,7 @@ height: 100px;
     height: 350px;
   }
 }
+
 /* ====Viddeo start (Julia)*/
 .video {
   margin-bottom: 100px;
@@ -940,6 +996,7 @@ height: 100px;
     height: 350px;
   }
 }
+
 /*About guide Nadya start*/
 .about__guide {
   max-width: 1300px;
