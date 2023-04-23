@@ -1078,6 +1078,12 @@ h6 {
   margin-right: 0.5%;
 }
 
+.social__instagram1,
+.social__telegram1,
+.social__whatsapp1 {
+  filter: grayscale(100%);
+}
+
 .contacts__media-telegram,
 .contacts__media-instagram,
 .contacts__media-whatsapp,
