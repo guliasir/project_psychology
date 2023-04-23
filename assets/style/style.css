@@ -243,12 +243,42 @@ img:hover {
   background-color: #f4f4f4;
 }
 
-@media screen and (max-width: 430px) {
+.burger-link {
+  margin-left: 45%;
+}
+
+@media screen and (max-width: 680px) {
   .header__right-part {
     display: none;
   }
+
+  .menu__box {
+    max-width: 200px;
+  }
+
+  .menu__item {
+    font-size: 30px;
+  }
+
+  .burger-link {
+    margin-left: 35%;
+  }
 }
+
+@media screen and (max-width: 430px) {
+  .menu__box {
+    max-width: 120px;
+  }
+
+  .menu__item {
+    font-size: 17px;
+  }
+
+  .burger-link {
+    margin-left: 25%;
+  }
 }
+
 
 /*HERO PART ANASTASIA*/
 
