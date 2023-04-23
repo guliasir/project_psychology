@@ -56,6 +56,7 @@ p {
   padding: 0 15px;
 }
 
+
 p:hover,
 p:focus,
 h2:hover,
@@ -337,74 +338,31 @@ img:hover {
   outline: none;
 }
 
-
 .hero__btn a {
   text-decoration: none;
   color: #050505;
 }
 
-
 .hero__btn a:hover {
   color: #959393;
-  color: #959393;
-}
-
-.hero__citation {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  border-radius: 10px;
-  padding: 15px;
-  margin-bottom: 100px;
-  width: 400px;
-  height: 120px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 36px;
-  font-family: "Playfair Display", serif;
-  color: #f4f4f4;
-  background-color: #4d4d4d90;
-}
-
-@media screen and (min-width: 903px) {
-  .hero__container-adaptation {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 902px) {
-  .hero__container {
-    display: none;
-  }
-
-  .hero__container {
-    display: none
-  }
-
-  .hero__container-adaptation {
+  .hero__text {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    max-width: 100%;
-    border-bottom: 1px solid #38383860;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
   }
-
-  .hero__citation {
-    max-width: 600px;
-  }
-
   .hero__title {
-    margin-bottom: 86px;
-  }
-
-  .hero__photo {
-    max-width: 450px;
+    margin-left: 0px;
   }
 
   .hero__btn {
-    margin-bottom: 0;
+    margin-right: 0;
+    align-self: flex-start;
   }
 }
 
@@ -438,7 +396,7 @@ img:hover {
   font-weight: 400;
   font-size: 20px;
   line-height: 36px;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", serif;
   color: #f4f4f4;
   background-color: #5b554b90;
 }
@@ -449,7 +407,7 @@ img:hover {
   font-weight: 400;
   font-size: 20px;
   line-height: 36px;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", serif;
   color: #f4f4f4;
 }
 
@@ -463,7 +421,7 @@ img:hover {
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", serif;
   color: #4d4d4d;
 }
 
@@ -482,13 +440,15 @@ img:hover {
   .Myjob__photo {
     margin-left: 0;
   }
+  .Myjob__citation {
+    align-self: center;
+  }
 }
 
 .border {
   width: 100%;
   border-bottom: 1px solid #38383860;
 }
-
 /*MYJOB PART ANASTASIA ENDS*/
 
 /*About me PART Gulya start*/
@@ -500,7 +460,6 @@ img:hover {
   display: flex;
   flex-direction: column;
   margin-bottom: 70px;
-
 }
 
 .about__title {
@@ -517,17 +476,13 @@ img:hover {
   width: 310px;
   height: 400px;
 }
-
 .about__article_title {
   display: flex;
   align-content: flex-end;
 }
-
 .about__content {
   display: flex;
   align-items: center;
-
-
 }
 
 h2 {
@@ -538,7 +493,6 @@ h2 {
   font-family: "Montserrat", serif;
   color: #4d4d4d;
 }
-
 h3 {
   font-style: normal;
   font-weight: 700;
@@ -547,7 +501,6 @@ h3 {
   font-family: "Montserrat", serif;
   color: #4d4d4d;
 }
-
 .about__article {
   display: flex;
   flex-direction: column;
@@ -572,12 +525,9 @@ h3 {
   background-color: #4d4d4d90;
   margin-bottom: 10px;
 }
-
 .about__education {
   width: 100%;
-  width: 100%;
 }
-
 .about__target p {
   font-style: normal;
   font-weight: 400;
@@ -585,13 +535,6 @@ h3 {
   line-height: 36px;
   font-family: "Montserrat", serif;
   color: #f4f4f4;
-}
-
-.about__citations {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 15px;
 }
 
 .about__citation p {
@@ -602,25 +545,23 @@ h3 {
   font-family: "Montserrat", serif;
   color: #f4f4f4;
 }
-
 .about__citation {
-
-
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   border-radius: 10px;
-  padding: 10px;
-  width: 350px;
-  height: 150px;
+  padding: 5px;
+  width: 310px;
+  height: 180px;
   font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 36px;
-  font-family: 'Playfair Display', serif;
+  font-weight: 380;
+  font-size: 18px;
+  line-height: 32px;
+  font-family: "Montserrat", serif;
   color: white;
   background-color: #4d4d4d90;
+  margin-top: 15px;
 }
 
 .about__item {
@@ -637,18 +578,16 @@ h3 {
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
-  font-family: 'Playfair Display', serif;
+  font-family: "Montserrat", serif;
   color: #4d4d4d;
   margin-top: 30px;
-
 }
-
 .about__education_title2 {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
-  font-family: 'Playfair Display', serif;
+  font-family: "Montserrat", serif;
   color: #4d4d4d;
   margin-top: 30px;
   display: flex;
@@ -656,16 +595,13 @@ h3 {
 
 .about__article {
   width: 100%;
-  width: 100%;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
 }
-
 .about__aside {
   margin-right: 70px;
 }
-
 .about__education_mobile {
   display: none;
 }
@@ -674,108 +610,31 @@ h3 {
   .about_education {
     margin: 0;
   }
-
   .about__aside {
     margin-right: 10px;
   }
-
   .about__article {
     width: auto;
   }
-
 }
-
 @media screen and (max-width: 1150px) {
   .about_education {
     width: 499px;
     margin-left: 0pxs;
     font-size: smaller;
   }
-
   .about__article {
     width: 550px;
-
   }
-
   .about {
     margin-right: 50px;
     margin-left: -20px;
   }
-
   .about__education_list {
-
     margin-right: 60px;
   }
-
   .about__aside {
     margin-left: 0px;
-  }
-}
-
-
-@media screen and (max-width: 902px) {
-  .about__content {
-    display: flex;
-    flex-direction: column;
-
-  }
-
-  .about__aside {
-    margin-right: 50px;
-  }
-
-  .about__title {
-    margin-right: 15%;
-
-  }
-
-  .about__article {
-    max-width: 550px;
-  }
-
-  .about__target {
-
-    width: 550px;
-    height: 100px;
-  }
-
-  .about__education {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 550px;
-  }
-}
-
-.about__image {
-  .about__image {
-    width: 550px;
-    height: 400px;
-
-  }
-
-  .about__citation {
-    width: 550px;
-    height: 150px;
-
-
-  }
-
-  .about__education_title2 {
-    display: none;
-  }
-
-  .about__education_list {
-    display: flex;
-    flex-direction: column;
-    margin-left: 50px;
-    width: 650px;
-  }
-
-  .about__education_mobile {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
   }
 }
 
@@ -784,26 +643,20 @@ h3 {
   .about {
     width: 100%;
     margin-left: 70px;
-
   }
-
   .about__target {
     margin-left: -80px;
   }
-
   .about__article {
     margin-left: 30px;
   }
 }
-
 @media screen and (max-width: 901px) {
   .about__body {
     display: flex;
     margin-left: 0;
     width: 100%;
-
   }
-
   .about__title {
     margin-right: 30%;
   }
@@ -811,45 +664,31 @@ h3 {
   .about__education {
     display: none;
   }
-
   .about__education_mobile {
     margin-right: 30%;
-
-
   }
-
   .about__image {
     width: 320px;
     height: 200px;
-
   }
-
   .about__aside {
     display: flex;
     flex-direction: column;
     padding-right: 60px;
     font-size: smaller;
   }
-
   .about__citation {
     width: 320px;
     height: 150px;
     font-size: smaller;
   }
 
-  font-size: smaller;
-}
-
-.about__target {
   .about__target {
     width: 320px;
     height: 100px;
     font-size: smaller;
     display: none;
-
   }
-
-
 }
 
 /*About me PART Gulya end*/
@@ -1004,7 +843,20 @@ h3 {
   .video__content {
     width: 100%;
     height: 100% auto;
+
+}
+
+@media screen and (max-width: 615px) {
+  .video__content {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
   }
+}
+
+@media screen and (max-width: 325px) {
+  .video__btn {
+    width: 240px;
 }
 
 @media screen and (max-width: 615px) {
@@ -1019,8 +871,8 @@ h3 {
   .video__btn {
     width: 240px;
   }
-}
 
+}
 /*About guide Nadya start*/
 .about__guide {
   max-width: 1300px;
@@ -1183,6 +1035,94 @@ h6 {
 .bottom {
   display: flex;
   justify-content: center;
+}
+
+@media screen and (min-width:600px) and (max-width: 903px) {
+  .contacts__header-text {
+    font-size: 16px;
+  }
+  .contacts__email-img {
+    width: 30px;
+    height: 30px;
+    margin-right: 0.5%;
+  }
+
+  .contacts__media-telegram,
+  .contacts__media-instagram,
+  .contacts__media-whatsapp,
+  .contacts__email-send,
+  .bottom__design-site {
+    font-size: 14px;
+  }
+  .social__instagram1,
+  .social__telegram1,
+  .social__whatsapp1,
+  .social__whatsapp,
+  .social__telegram,
+  .social__instagram,
+  .social__youtube {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+  }
+  .footercontainer__copyright-text1,
+  .footercontainer__copyright-text2 {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .contacts__header-text {
+    font-size: 14px;
+  }
+  .contacts__email-img {
+    width: 30px;
+    height: 30px;
+    margin-right: 0.5%;
+  }
+  .contacts__media-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -15%;
+  }
+
+  .contacts__media-telegram,
+  .contacts__media-instagram,
+  .contacts__media-whatsapp,
+  .contacts__email-send,
+  .bottom__design-site {
+    font-size: 12px;
+  }
+  .social__instagram1,
+  .social__telegram1,
+  .social__whatsapp1,
+  .social__whatsapp,
+  .social__telegram,
+  .social__instagram,
+  .social__youtube {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+  }
+  .footercontainer__copyright-text1,
+  .footercontainer__copyright-text2 {
+    font-size: 12px;
+  }
+
+  .footercontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footercontainer__copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footercontainer__copyright-text2 {
+    text-align: center;
+  }
 }
 
 /*FOOTER PART MILA END*/
