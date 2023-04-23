@@ -256,7 +256,7 @@ img:hover {
   height: 700px;
   border-bottom: 1px solid #38383860;
   margin-bottom: 70px;
-  background-image: url(/assets/img/hands_photo.jpg);
+  background-image: url(/assets/img/hands.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1056,7 +1056,6 @@ h6 {
 .footercontainer {
   display: flex;
   justify-content: space-between;
-
 }
 
 .footercontainer__media-social {
