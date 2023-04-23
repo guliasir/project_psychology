@@ -22,13 +22,13 @@ h1 {
   font-weight: 400;
   font-size: 30px;
   line-height: 28px;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", serif;
   color: #4d4d4d;
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
   line-height: 28px;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", serif;
   color: #4d4d4d;
 }
 
@@ -37,13 +37,13 @@ p {
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", serif;
   color: #4d4d4d;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", serif;
   color: #4d4d4d;
 }
 
@@ -123,7 +123,7 @@ img:hover {
 }
 
 .header__link {
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 19px;
@@ -230,7 +230,7 @@ img:hover {
   display: block;
   padding: 12px 24px;
   color: rgb(68, 66, 66);
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", serif;
   font-size: 40px;
   font-weight: 400;
   text-decoration: none;
@@ -286,7 +286,7 @@ img:hover {
   font-weight: 400;
   font-size: 80px;
   line-height: 28px;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", serif;
   color: #000000;
 }
 
@@ -300,9 +300,9 @@ img:hover {
   height: 70px;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 36px;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", serif;
   background-color: #4d4d4d;
   outline: none;
 }
@@ -330,7 +330,7 @@ img:hover {
   font-weight: 400;
   font-size: 18px;
   line-height: 36px;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", serif;
   color: #f4f4f4;
   background-color: #4d4d4d90;
 }*/
@@ -406,7 +406,7 @@ img:hover {
   font-weight: 400;
   font-size: 20px;
   line-height: 36px;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", serif;
   color: #f4f4f4;
   background-color: #5b554b90;
 }
@@ -417,7 +417,7 @@ img:hover {
   font-weight: 400;
   font-size: 20px;
   line-height: 36px;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", serif;
   color: #f4f4f4;
 }
 
@@ -431,7 +431,7 @@ img:hover {
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", serif;
   color: #4d4d4d;
 }
 
@@ -500,7 +500,7 @@ h2 {
   font-weight: 700;
   font-size: 30px;
   line-height: 28px;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", serif;
   color: #4d4d4d;
 }
 h3 {
@@ -508,7 +508,7 @@ h3 {
   font-weight: 700;
   font-size: 30px;
   line-height: 28px;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", serif;
   color: #4d4d4d;
 }
 .about__article {
@@ -530,7 +530,7 @@ h3 {
   font-weight: 400;
   font-size: 20px;
   line-height: 36px;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", serif;
   color: #f4f4f4;
   background-color: #4d4d4d90;
   margin-bottom: 10px;
@@ -543,7 +543,7 @@ h3 {
   font-weight: 400;
   font-size: 20px;
   line-height: 36px;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", serif;
   color: #f4f4f4;
 }
 
@@ -558,7 +558,7 @@ h3 {
   font-weight: 400;
   font-size: 20px;
   line-height: 36px;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", serif;
   color: #f4f4f4;
 }
 .about__citation {
@@ -574,7 +574,7 @@ h3 {
   font-weight: 400;
   font-size: 20px;
   line-height: 36px;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", serif;
   color: white;
   background-color: #4d4d4d90;
 }
@@ -584,7 +584,7 @@ h3 {
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", serif;
   color: #4d4d4d;
 }
 
@@ -593,7 +593,7 @@ h3 {
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", serif;
   color: #4d4d4d;
   margin-top: 30px;
 }
@@ -602,7 +602,7 @@ h3 {
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", serif;
   color: #4d4d4d;
   margin-top: 30px;
   display: flex;
@@ -804,7 +804,7 @@ h3 {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", serif;
   color: #4d4d4d;
 }
 
@@ -813,7 +813,8 @@ h3 {
   height: 100px;
   background-color: #4d4d4d90;
   color: #fffbfb;
-  font-size: 25px;
+  font-family: "Montserrat", serif;
+  font-size: 18px;
   border: 1px solid #404040;
   cursor: pointer;
   border-radius: 10px;
@@ -911,7 +912,7 @@ h3 {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", serif;
   color: #4d4d4d;
 }
 
@@ -979,7 +980,7 @@ h3 {
   padding: 5px;
   text-align: center;
   border-radius: 10px;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", serif;
   color: #f4f4f4;
   background-color: #5b554b90;
 }
@@ -989,7 +990,7 @@ h3 {
 /*About reviews Nadya start*/
 .container {
   margin-bottom: 40px;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", serif;
   color: #4d4d4d;
   margin-bottom: 70px;
 }
@@ -1049,7 +1050,7 @@ h6 {
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", serif;
   color: #4d4d4d;
   text-align: center;
 }
@@ -1182,7 +1183,7 @@ h6 {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", serif;
   text-decoration: none;
   color: #4d4d4d;
 }
