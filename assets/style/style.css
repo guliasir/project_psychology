@@ -372,6 +372,7 @@ img:hover {
   }
   .hero__title {
     margin-left: 0px;
+    margin-top: 100px;
     font-size: 40px;
   }
 
@@ -401,25 +402,27 @@ img:hover {
 .Myjob__left {
   display: flex;
   flex-direction: column;
-  margin-left: 32px;
+  margin-right: 32px;
 }
 
 .Myjob__citation {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
+  align-self: center;
   border-radius: 10px;
-  padding: 15px;
-  width: 400px;
-  height: 150px;
+  padding: 10px;
+  width: 600px;
+  height: 130px;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 36px;
   font-family: "Montserrat", serif;
   color: #f4f4f4;
-  background-color: #5b554b90;
+  background-color: #4d4d4d90;
 }
 
 .Myjob__citation p {
@@ -433,8 +436,7 @@ img:hover {
 }
 
 .Myjob__photo {
-  max-width: 450px;
-  margin-right: 32px;
+  max-width: 500px;
 }
 
 .Myjob__left-list {
@@ -454,8 +456,9 @@ img:hover {
   }
 
   .Myjob__left {
-    margin-left: 0;
+    max-width: 500px;
     margin-bottom: 32px;
+    margin-right: 0;
   }
 
   .Myjob__photo {
@@ -463,6 +466,8 @@ img:hover {
   }
   .Myjob__citation {
     align-self: center;
+    width: 500px;
+    margin-right: 0;
   }
 }
 
@@ -496,7 +501,6 @@ img:hover {
   width: 320px;
   height: 400px;
   margin-top: 30px;
- 
 }
 .about__article_title {
   display: flex;
@@ -527,7 +531,6 @@ h3 {
   display: flex;
   flex-direction: column-reverse;
   align-items: flex-start;
-  
 }
 
 .about__target {
@@ -622,7 +625,6 @@ h3 {
 
 .about__aside {
   margin-right: 70px;
- 
 }
 .about__education_mobile {
   display: none;
@@ -635,41 +637,35 @@ h3 {
   display: none;
 }
 
-
-
 @media screen and (max-width: 1250px) {
   .about__body {
-  margin: 0 auto;
-  margin: 20px auto;
-  padding: 5px;
-  padding-right: 32px;
+    margin: 0 auto;
+    margin: 20px auto;
+    padding: 5px;
+    padding-right: 32px;
   }
   .about__citation {
     height: 150px;
     width: 600px;
   }
- 
 }
 @media screen and (max-width: 1010px) {
   .about__body {
-    
-      margin: 0 auto;
-      margin: 20px auto;
-      padding: 5px;
-      padding-right: 32px;
-      }
-  
-    }
-  .about__citation {
-    height: 150px;
-    width: 550px;
+    margin: 0 auto;
+    margin: 20px auto;
+    padding: 5px;
+    padding-right: 32px;
   }
+}
+.about__citation {
+  height: 150px;
+  width: 550px;
+}
 
 @media screen and (max-width: 903px) {
   .about__body {
     height: max-content;
     display: flex;
-    
   }
   .about__education_title2 {
     display: none;
@@ -680,18 +676,15 @@ h3 {
   .about__target {
     width: 320px;
     height: 150;
-    
   }
   .about__article {
     align-items: flex-start;
     margin-top: 20px;
-    
   }
   .about__content {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    
   }
   .about__mobile_list {
     width: 480px;
@@ -721,9 +714,8 @@ h3 {
   .about__citation {
     height: 150px;
     width: 410px;
-
   }
-  
+
   .about__title {
     margin-right: 20px;
   }
@@ -738,7 +730,6 @@ h3 {
     width: 320px;
     margin-right: 10px;
   }
-  
 }
 
 @media screen and (max-width: 540px) {
@@ -756,7 +747,6 @@ h3 {
   .about__target {
     width: 400px;
     height: 100px;
-
   }
   .about__aside {
     display: flex;
@@ -1126,7 +1116,7 @@ h6 {
   justify-content: center;
 }
 
-@media screen and (min-width:600px) and (max-width: 903px) {
+@media screen and (min-width: 600px) and (max-width: 903px) {
   .contacts__header-text {
     font-size: 16px;
   }
