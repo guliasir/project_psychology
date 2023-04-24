@@ -271,7 +271,7 @@ img:hover {
 }
 
 .hero__title {
-  margin-top: 100px;
+  margin-top: 200px;
   margin-left: 700px;
   font-style: normal;
   font-weight: 300;
@@ -309,7 +309,7 @@ img:hover {
   color: #959393;
 }
 
-@media screen and (max-width: 902px) {
+@media screen and (max-width: 903px) {
   .hero__text {
     display: flex;
     flex-direction: column;
@@ -600,7 +600,7 @@ h3 {
   }
 }
 
-@media screen and (max-width: 902px) {
+@media screen and (max-width: 903px) {
   .about__content {
     display: flex;
     flex-direction: column;
