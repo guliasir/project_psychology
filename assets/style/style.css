@@ -784,7 +784,7 @@ h3 {
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
   .about__aside {
     padding-right: 50px;
   }
@@ -795,11 +795,8 @@ h3 {
   .about__article {
     padding-right: 50px;
   }
-}
-.about__citation {
-  width: 320px;
-  height: 190px;
-}
+
+
 .about__target {
   width: 320px;
   height: 100px;
@@ -807,10 +804,20 @@ h3 {
 .about__mobile_content {
   padding-right: 30px;
 }
+.about__citation {
+  width: 320px;
+  height: 190px;
+
+}}
 
 @media screen and (max-width: 400px) {
   .about__body {
     margin-left: 0px;
+  }
+  .about__citation {
+      width: 320px;
+      height: 190px;
+    
   }
   .about__aside {
     padding-right: 0px;
