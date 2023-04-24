@@ -60,9 +60,8 @@ p:hover,
 p:focus,
 h2:hover,
 h2:focus {
+  color: #121212;
   opacity: 0.8;
-  transition: 0.8s ease-out;
-  transform: scale(1.03);
 }
 
 img:hover {
@@ -292,7 +291,7 @@ img:hover {
   height: 700px;
   border-bottom: 1px solid #38383860;
   margin-bottom: 70px;
-  background-image: url(/./assets/img/hands.jpg);
+  background-image: url(/assets/img/hands.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }
