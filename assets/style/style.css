@@ -372,6 +372,7 @@ img:hover {
   }
   .hero__title {
     margin-left: 0px;
+    margin-top: 100px;
     font-size: 40px;
   }
 
@@ -380,7 +381,6 @@ img:hover {
     margin-bottom: 50px;
     width: 250px;
     height: 50px;
-    align-self: flex-start;
     align-self: auto;
     padding: 5px;
     font-size: 14px;
@@ -401,25 +401,27 @@ img:hover {
 .Myjob__left {
   display: flex;
   flex-direction: column;
-  margin-left: 32px;
+  margin-right: 32px;
 }
 
 .Myjob__citation {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
+  align-self: center;
   border-radius: 10px;
-  padding: 15px;
-  width: 400px;
-  height: 150px;
+  padding: 10px;
+  width: 600px;
+  height: 130px;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 36px;
   font-family: "Montserrat", serif;
   color: #f4f4f4;
-  background-color: #5b554b90;
+  background-color: #4d4d4d90;
 }
 
 .Myjob__citation p {
@@ -433,8 +435,7 @@ img:hover {
 }
 
 .Myjob__photo {
-  max-width: 450px;
-  margin-right: 32px;
+  max-width: 500px;
 }
 
 .Myjob__left-list {
@@ -454,8 +455,9 @@ img:hover {
   }
 
   .Myjob__left {
-    margin-left: 0;
+    max-width: 500px;
     margin-bottom: 32px;
+    margin-right: 0;
   }
 
   .Myjob__photo {
@@ -463,6 +465,8 @@ img:hover {
   }
   .Myjob__citation {
     align-self: center;
+    width: 500px;
+    margin-right: 0;
   }
 }
 
