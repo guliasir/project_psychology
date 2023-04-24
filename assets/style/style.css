@@ -56,7 +56,6 @@ p {
   padding: 0 15px;
 }
 
-
 p:hover,
 p:focus,
 h2:hover,
@@ -82,7 +81,6 @@ img:hover {
 .header__container {
   display: flex;
   justify-content: space-between;
-
 }
 
 .header__left-part {
@@ -163,21 +161,21 @@ img:hover {
   opacity: 0.1;
 }
 
-#menu__toggle:checked+.menu__btn>span {
+#menu__toggle:checked + .menu__btn > span {
   transform: rotate(45deg);
 }
 
-#menu__toggle:checked+.menu__btn>span::before {
+#menu__toggle:checked + .menu__btn > span::before {
   top: 0;
   transform: rotate(0deg);
 }
 
-#menu__toggle:checked+.menu__btn>span::after {
+#menu__toggle:checked + .menu__btn > span::after {
   top: 0;
   transform: rotate(90deg);
 }
 
-#menu__toggle:checked~.menu__box {
+#menu__toggle:checked ~ .menu__box {
   left: 0 !important;
 }
 
@@ -191,9 +189,9 @@ img:hover {
   z-index: 11;
 }
 
-.menu__btn>span,
-.menu__btn>span::before,
-.menu__btn>span::after {
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
   display: block;
   position: absolute;
   width: 100%;
@@ -202,12 +200,12 @@ img:hover {
   transition-duration: 0.25s;
 }
 
-.menu__btn>span::before {
+.menu__btn > span::before {
   content: "";
   top: -7px;
 }
 
-.menu__btn>span::after {
+.menu__btn > span::after {
   content: "";
   top: 7px;
 }
@@ -294,7 +292,7 @@ img:hover {
   height: 700px;
   border-bottom: 1px solid #38383860;
   margin-bottom: 70px;
-  background-image: url(/project_psychology/assets/img/hands.jpg);
+  background-image: url(/./assets/img/hands.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -309,7 +307,7 @@ img:hover {
 }
 
 .hero__title {
-  margin-top: 100px;
+  margin-top: 200px;
   margin-left: 700px;
   font-style: normal;
   font-weight: 300;
@@ -347,7 +345,7 @@ img:hover {
   color: #959393;
 }
 
-@media screen and (max-width: 902px) {
+@media screen and (max-width: 903px) {
   .hero__text {
     display: flex;
     flex-direction: column;
@@ -363,6 +361,29 @@ img:hover {
   .hero__btn {
     margin-right: 0;
     align-self: flex-start;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero__title {
+    margin-left: 0px;
+    font-size: 40px;
+  }
+
+  .hero__btn {
+    margin-right: 0;
+    margin-bottom: 50px;
+    width: 250px;
+    height: 50px;
+    align-self: flex-start;
+    align-self: auto;
+    padding: 5px;
+    font-size: 14px;
   }
 }
 
@@ -617,17 +638,18 @@ h3 {
 @media screen and (max-width: 960px) {
   .about__body {
     padding-left: 15px;
-}
+  }
 }
 
 @media screen and (max-width: 1199px) {
   .about__body {
-   margin-left: 15px;
-  }}
+    margin-left: 15px;
+  }
+}
 
 @media screen and (max-width: 903px) {
   .about__body {
-    height:max-content;
+    height: max-content;
   }
   .about__education_title2 {
     display: none;
@@ -637,10 +659,8 @@ h3 {
   }
   .about__target {
     width: 410px;
-    
   }
   .about__article {
-    
     align-items: flex-start;
     margin-top: 20px;
   }
@@ -652,7 +672,7 @@ h3 {
     width: 480px;
     display: flex;
     flex-direction: column;
-    text-align:justify;
+    text-align: justify;
     align-items: center;
     font-style: normal;
     font-weight: 400;
@@ -668,50 +688,51 @@ h3 {
     display: flex;
     justify-content: center;
   }
-  
-.about__body {
-  justify-content: center;
-  flex-direction: row;
-}
-.about__citation {
-  height: 150px;
-  width: 410px;
-}
-.about__title {
-  margin-right: 20px;
-}
-.about__image {
-  width: 400px;
-  height: 450px;
-}
 
+  .about__body {
+    justify-content: center;
+    flex-direction: row;
+  }
+  .about__citation {
+    height: 150px;
+    width: 410px;
+  }
+  .about__title {
+    margin-right: 20px;
+  }
+  .about__image {
+    width: 400px;
+    height: 450px;
+  }
 }
 @media screen and (max-width: 467px) {
-.about__article {padding-left: 30px;}
+  .about__article {
+    padding-left: 30px;
+  }
 }
 @media screen and (max-width: 540px) {
   .about__body {
-padding-left: 40px;
-   
-  }}
-  @media screen and (max-width: 450px) {
-    .about__aside {
-      padding-left: 30px;
-    }
-    .about__article {
-      padding-left: 30px;}
-    }
-    .about__mobile_content {
-      padding-left: 20px;
-    }
-    @media screen and (max-width: 420px) {
-      .about__body {
-        margin-left: 130px;
-      }}
-
+    padding-left: 40px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .about__aside {
+    padding-left: 30px;
+  }
+  .about__article {
+    padding-left: 30px;
+  }
+}
+.about__mobile_content {
+  padding-left: 20px;
+}
+@media screen and (max-width: 420px) {
+  .about__body {
+    margin-left: 130px;
+  }
+}
 
 /*About me PART Gulya end*/
-
 
 /* ====Viddeo start (Julia)*/
 
@@ -762,7 +783,6 @@ padding-left: 40px;
   transform: scale(1.03);
   transition: 0.8s ease-out;
 }
-
 
 .video {
   margin-bottom: 100px;
@@ -825,7 +845,6 @@ padding-left: 40px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-
 
 @media screen and (max-width: 1245px) {
   .video {
@@ -894,7 +913,6 @@ padding-left: 40px;
   }
 }
 
- 
 /*About guide Nadya start*/
 .about__guide {
   max-width: 1300px;
@@ -1059,7 +1077,7 @@ h6 {
   justify-content: center;
 }
 
-@media screen and (min-width:600px) and (max-width: 903px) {
+@media screen and (min-width: 600px) and (max-width: 903px) {
   .contacts__header-text {
     font-size: 16px;
   }
