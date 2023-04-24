@@ -7,112 +7,131 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Baktybala</title>
+    <link rel="icon" href="https://icons8.ru/icon/pIH87RmnLlj4/psychotherapy" type="image/x-icon" />
+    <link rel="icon" href="https://icons8.ru/icon/pIH87RmnLlj4/psychotherapy" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Josefin+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
->
+
     <link rel="stylesheet" type="text/css" href="./assets/style/normalize.css">
     <link rel="stylesheet" type="text/css" href="./assets/style/style.css">
 </head>
 
 <body>
-    <header class="header wrapper">
-        <div class="header__container">
-            <div class="header__left-part"> <!-- логотип сделать ссылкой  -->
-                <img class="header__logo" src="./assets/img/logo.svg" alt="Baktybala">
-                <!-- <nav class="header__navigation">
-                        <ul class="header__menu">
-                            <li class="header__item">
+   <header class="header wrapper">
+     <div class="header__container">
+         <div class="header__left-part"> <!-- логотип сделать ссылкой  -->
+            <a href="index.html">
+            <img class="header__logo" src="./assets/img/logo.svg" alt="Baktybala"></a>
+        <!-- <nav class="header__navigation">
+         <ul class="header__menu">
+                                 <li class="header__item">
                                 <a class="header__link" href="#">С чем я работаю</a>
-                            </li>
-                            <li class="header__item">
-                                <a class="header__link" href="#">Гайд</a>
-                            </li>
-                            <li class="header__item">
-                                <a class="header__link" href="#">Обо мне</a>
-                            </li>
-                            <li class="header__item">
-                                <a class="header__link" href="#">Отзывы</a>
-                            </li>
-                            <li class="header__item">
-                                <a class="header__link" href="#">Видео</a>
-                            </li>
-                            <li class="header__item">
-                                <a class="header__link" href="#">Контакты</a>
+                                </li>
+                                <li class="header__item">
+                                    <a class="header__link" href="#">Гайд</a>
+                                </li>
+                                <li class="header__item">
+                                    <a class="header__link" href="#">Обо мне</a>
+                                </li>
+                                <li class="header__item">
+                                    <a class="header__link" href="#">Отзывы</a>
+                                </li>
+                                <li class="header__item">
+                                    <a class="header__link" href="#">Видео</a>
+                                </li>
+                                <li class="header__item">
+                                    <a class="header__link" href="#">Контакты</a>
+                                </li>
+                            </ul>
+                        </nav> -->
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox">
+             <label class="menu__btn" for="menu__toggle">
+            <span></span>
+            </label>
+             <ul class="menu__box">
+                 <li><a class="menu__item" href="#">С чем я работаю</a></li>
+                <li><a class="menu__item" href="#">Гайд</a></li>
+                <li><a class="menu__item" href="#">Обо мне</a></li>
+                <li><a class="menu__item" href="#">Отзывы</a></li>
+                 <li><a class="menu__item" href="#video">Видео</a></li>
+                <li><a class="menu__item" href="#">Контакты</a></li>
+                <li> <a class="header__link burger-link" href=" https://www.instagram.com/baktybala_"
+                                    target="_blank"><img class="header__icon" src="./assets//img/ico/insta-icon.svg"
+                                        alt="instagram"></a>
+                    </li>
+                <li> <a class="header__link burger-link" href="https://t.me/baktybalaa" target="_blank"><img
+                                        class="header__icon" src="./assets/img/ico/telegram-icon.svg" alt="telegram"></a>
+                 </li>
+                <li> <a class="header__link burger-link" href="https://www.youtube.com/@baktybala"
+                                    target="_blank"><img class="header__icon" src="./assets/img/ico/youtube-icon.svg"
+                                        alt="youtube"></a>
+                         </li>
+                    <li> <a class="header__link  burger-link"
+                                    href="https://api.whatsapp.com/send/?phone=77076156042" target="_blank"><img
+                                        class="header__icon" src="./assets/img/ico/wtatsapp-icon.svg" alt="whatsapp"></a>
                             </li>
                         </ul>
-                    </nav> -->
-                <div class="hamburger-menu">
-                    <input id="menu__toggle" type="checkbox">
-                    <label class="menu__btn" for="menu__toggle">
-                        <span></span>
-                    </label>
-                    <ul class="menu__box">
-                        <li><a class="menu__item" href="#">С чем я работаю</a></li>
-                        <li><a class="menu__item" href="#">Гайд</a></li>
-                        <li><a class="menu__item" href="#">Обо мне</a></li>
-                        <li><a class="menu__item" href="#">Отзывы</a></li>
-                        <li><a class="menu__item" href="#">Видео</a></li>
-                        <li><a class="menu__item" href="#">Контакты</a></li>
-                    </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="header__right-part">
-            <a class="header__link" href=" https://www.instagram.com/baktybala_" target="_blank"><img
-                    class="header__icon" src="./assets//img/ico/insta-icon.svg" alt="instagram"></a>
-            <a class="header__link" href="https://t.me/baktybalaa" target="_blank"><img class="header__icon"
-                    src="./assets/img/ico/telegram-icon.svg" alt="telegram"></a>
-            <!--<a class="header__link" href="#" target="_blank"><img class="header__icon"
-                    src="./assets/img/ico/vk-icon.svg" alt="VKontakte"></a>-->
-            <a class="header__link" href="https://www.youtube.com/@baktybala" target="_blank"><img class="header__icon"
-                    src="./assets/img/ico/youtube-icon.svg" alt="youtube"></a>
-            <a class="header__link" href="#" target="_blank"><img class="header__icon"
-                    src="./assets/img/ico/wtatsapp-icon.svg" alt="whatsapp"></a>
-        </div>
-        </div>
-
-    </header>
-    <!----HERO PART ANASTASIA-------->
-    <section class="hero__container wrapper">
-        <div class="hero__text">
-        <p class="hero__title">baktybala</p><button class="hero__btn"><a href="https://t.me/baktybalaa" target="_blank">Записаться на
-                консультацию</a></button>
-        </div>
+    
+    
+    <div class="header__right-part">
+                <a class="header__link" href=" https://www.instagram.com/baktybala_" target="_blank"><img
+                        class="header__icon" src="./assets//img/ico/insta-icon.svg" alt="instagram"></a>
+                <a class="header__link" href="https://t.me/baktybalaa" target="_blank"><img class="header__icon"
+                        src="./assets/img/ico/telegram-icon.svg" alt="telegram"></a>
+                <!-- <a class="header__link" href="#" target="_blank"><img class="header__icon"
+                        src="./assets/img/ico/vk-icon.svg" alt="VKontakte"></a> -->
+                <a class="header__link" href="https://www.youtube.com/@baktybala" target="_blank"><img class="header__icon"
+                        src="./assets/img/ico/youtube-icon.svg" alt="youtube"></a>
+                <a class="header__link" href="https://api.whatsapp.com/send/?phone=77076156042" target="_blank"><img
+                        class="header__icon" src="./assets/img/ico/wtatsapp-icon.svg" alt="whatsapp"></a>
+            </div>
+    
+        </header>
+    
+   <!----HERO PART ANASTASIA-------->
+   <section class="hero__container wrapper">
+    <div class="hero__text">
+    <p class="hero__title">baktybala</p><button class="hero__btn"><a href="">Записаться на
+            консультацию</a></button>
+    </div>
 </section>
 
 <!----HERO PART ANASTASIA ENDS-------->
 
 <!----MYJOB PART ANASTASIA-------->
 <section class="Myjob__container wrapper">
-    <div class="Myjob__left">
-        <div class="Myjob__left-bottom">
-            <ul>
-                <h2>Варианты консультаций</h2>
-                <li class="Myjob__left-list">групповая психотерапия</li>
-                <li class="Myjob__left-list">индивидуальная психотерапия</li>
-                <li class="Myjob__left-list">психотерапия пар</li>
-                <li class="Myjob__left-list">психотерапия подростков</li>
-                <li class="Myjob__left-list">онлайн психотерапия из любой точки мира</li>
-            </ul>
-        </div>
-        <div class="Myjob__left-top">
-            <ul>
-                <h2>Запросы, с которыми работает Baktybala</h2>
-                <li class="Myjob__left-list">психологические травмы</li>
-                <li class="Myjob__left-list">аутоиммунные заболевания (ВЗК, АИТ, РА, псориаз и т. д.)</li>
-                <li class="Myjob__left-list">созависимость</li>
-                <li class="Myjob__left-list">принятие себя и своего тела</li>
-                <li class="Myjob__left-list">поиски и обретение смыслов</li>
-                <li class="Myjob__left-list">профессиональный рост</li>
-                <li class="Myjob__left-list">вопросы эмиграции</li>
-            </ul>
-        </div>
-        <div class="Myjob__citation">
-            <p>"Будьте собой, выражайте себя свободно и без страха"</p>
-            <p>Ф. Перлз</p>
-        </div>
+<div class="Myjob__left">
+    <div class="Myjob__left-bottom">
+        <ul>
+            <h2>Варианты консультаций</h2>
+            <li class="Myjob__left-list">групповая психотерапия</li>
+            <li class="Myjob__left-list">индивидуальная психотерапия</li>
+            <li class="Myjob__left-list">психотерапия пар</li>
+            <li class="Myjob__left-list">психотерапия подростков</li>
+            <li class="Myjob__left-list">онлайн психотерапия из любой точки мира</li>
+        </ul>
     </div>
-    <img src="./assets/img/flower.jpg" alt="flower" class="Myjob__photo">
+    <div class="Myjob__left-top">
+        <ul>
+            <h2>Запросы, с которыми работает Baktybala</h2>
+            <li class="Myjob__left-list">психологические травмы</li>
+            <li class="Myjob__left-list">аутоиммунные заболевания (ВЗК, АИТ, РА, псориаз и т. д.)</li>
+            <li class="Myjob__left-list">созависимость</li>
+            <li class="Myjob__left-list">принятие себя и своего тела</li>
+            <li class="Myjob__left-list">поиски и обретение смыслов</li>
+            <li class="Myjob__left-list">профессиональный рост</li>
+            <li class="Myjob__left-list">вопросы эмиграции</li>
+        </ul>
+    </div>
+    <div class="Myjob__citation">
+        <p>"Будьте собой, выражайте себя свободно и без страха"</p>
+        <p>Ф. Перлз</p>
+    </div>
+</div>
+<img src="./assets/img/flower.jpg" alt="flower" class="Myjob__photo">
 </section>
 <p class="border"></p>
 <!----MYJOB PART ANASTASIA ENDS-------->
@@ -120,17 +139,35 @@
 
 
      <!----Gulya about me block start-------->
-
+    
      <section class="about wrapper">
-        <h2 class="about__title">Обо мне</h2>
+        <h2 class="about__title">О Baktybale</h2>
+        <div class="about__mobile_content">
+         <div class="about__mobile_list">
+            
+            <div>Практикующий психолог, опыт работы более 2 лет</div>
+            <div><h3 class="about__title_education">Образование</h3></div>
+            <div>● KIMEP University (маркетинг и юриспруденция 2011-2014)</div>
+            <div> ● Caspian University (бакалавр в организационной психологии
+                2019-2020</div>
+            <div> ● ГЦА (повышение квалификации в гештальт подходе 2020-2022</div>
+            <div> ● Кавказский гештальт Институт (повышение квалификации в
+                гештальт подходе 2021-по наст. время)</div>
+            <div> ● GATLA, Лос-Анджелесская школа гештальта. Специализация по
+                работе с травмой (2022-2023)</div>
+            <div> ● Постоянный участник конференций и воркшопов по психологии</div>
+            </div>  
+        </div>
+  
         <div class="about__education_mobile">
         <div class="about__education_title">Практикующий психолог, опыт работы более 2 лет</div>
     </div>
+    
         <div class="about__body">
             <div class="about__content">
 
                 <div class="about__aside">
-                    <img src="./assets/img/hero.png" alt="hero" class="about__image">
+                    <img src="./assets/img/herosized.png" alt="hero" class="about__image">
                    <div class="about__citations">
                   
                     <div class="about__citation">
@@ -149,12 +186,24 @@
                     <div class="about__education">
                     
                         <div class="about__education_title2">Практикующий психолог, опыт работы более 2 лет</div>
-                    
+                    <div class="about__mobile_list">
+                        <div><h3 class="about__title_education">Мое образование</h3></div>
+                        <div>KIMEP University (маркетинг и юриспруденция 2011-2014)</div>
+                        <div>Caspian University (бакалавр в организационной психологии
+                            2019-2020</div>
+                        <div>ГЦА (повышение квалификации в гештальт подходе 2020-2022</div>
+                        <div>Кавказский гештальт Институт (повышение квалификации в
+                            гештальт подходе 2021-по наст. время)</div>
+                        <div>GATLA, Лос-Анджелесская школа гештальта. Специализация по
+                            работе с травмой (2022-2023)</div>
+                        <div>Постоянный участник конференций и воркшопов по психологии</div>
+                        
+                    </div>
 
-                        <ul class="about__education_list">
-                            <h3 class="about__title_education">Мое образование</h3>
-                            <li class="about__item">
-                                <a class="about__item list">KIMEP University (маркетинг и юриспруденция 2011-2014)</a>
+                     <ul class="about__education_list">
+                     <h3 class="about__title_education">Мое образование</h3>
+                    <li class="about__item">
+                     <a class="about__item list">KIMEP University (маркетинг и юриспруденция 2011-2014)</a>
                             </li>
                             <li class="about__item">
                                 <a class="about__item list">Caspian University (бакалавр в организационной психологии
@@ -184,46 +233,37 @@
     </section>
     <!----Gulya about me block END-------->
     
-     <!----Julia VIDEO start--->
-   <section class="video wrapper">
-    <h2 class="video__title">Мой YOUTUBE-канал</h2>
+<!----Julia VIDEO start--->
+<section class="video wrapper" id="video">
+    <h2 class="video__title">YOUTUBE-канал</h2>
     <div class="video__container">
-        <div class="video__left-part">
-            <iframe class="video__content" width="400" height="250" src="https://www.youtube.com/embed/zoS75dCpvpI"
-                title="Стань чувствительным к себе" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-            <iframe class="video__content" width="400" height="250"
-                src="https://www.youtube.com/embed/zAVdSOz8EaY?list=PLpTJjjRSjJVYZ6NPlxkQvplAA_qJNMvMG"
-                title="АЙСУЛУ АЗИМБАЕВА | Сексуальность, риски и театр" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-            <iframe class="video__content" width="400" height="250"
-                src="https://www.youtube.com/embed/9ZQ8LCPb_Ss?list=PLpTJjjRSjJVZgAY1JQnGUzU57nZFREpGM"
-                title="подкаст SEBE #13:  Манифестация денег. Как стать богатым | Татьяна Ким" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-        </div>
-        <div class="video__right-part">
-            <div class="video__subtitle-content">
-                <p class="video__subtitle">Этот канал был создан мной, вдохновением
-                    делиться знаниями о психологии. После
-                    моих видео вы не только поймете сложные
-                    концепты из психологии, но сможете
-                    удачно и легко использовать их в своей жизни.<br><br>
-                    Я за осознанность, самообразование и
-                    развитие.</p>
-            </div>
-            <form class="video__form" action="https://www.youtube.com/@baktybala" target="_blank">
-                <button class="video__btn">Узнать больше</button>
-            </form>
-        </div>
+        <iframe class="video__content" width="400" height="250" src="https://www.youtube.com/embed/zoS75dCpvpI"
+            title="Стань чувствительным к себе" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        <iframe class="video__content" width="400" height="250"
+            src="https://www.youtube.com/embed/zAVdSOz8EaY?list=PLpTJjjRSjJVYZ6NPlxkQvplAA_qJNMvMG"
+            title="АЙСУЛУ АЗИМБАЕВА | Сексуальность, риски и театр" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        <iframe class="video__content" width="400" height="250"
+            src="https://www.youtube.com/embed/9ZQ8LCPb_Ss?list=PLpTJjjRSjJVZgAY1JQnGUzU57nZFREpGM"
+            title="подкаст SEBE #13:  Манифестация денег. Как стать богатым | Татьяна Ким" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
     </div>
+    <p class="video__subtitle">Этот канал был создан мной, вдохновением
+        делиться знаниями о психологии. После
+        моих видео вы не только поймете сложные
+        концепты из психологии, но сможете
+        удачно и легко использовать их в своей жизни.<br><br>
+        Я за осознанность, самообразование и
+        развитие.</p>
+    <form class="video__form" action="https://www.youtube.com/@baktybala" target="_blank">
+        <button class="video__btn">Узнать больше</button>
+    </form>
 </section>
-
 <!----Julia VIDEO end--->
-    
-
 
     <!----Nadya about guide block start-------->
 
@@ -307,17 +347,16 @@
     <!----FOOTER PART MILA-------->
 
     <!--<div class="contacts">-->
-    <div class="contacts__left wrapper">
+    <div class="contacts__left ">
         <div class="contacts__header">
             <h3 class="contacts__header-text">Посетите мои странички в социальных сетях, чтобы записаться на
                 консультацию или узнать больше обо мне.</h3>
         </div>
         <div class="contacts__media">
             <ul class="contacts__media-list">
-                <li><a class="contacts__media-telegram" href="https://t.me/baktybalaa" target="_blank"><img
-                class="social__telegram1" src="./assets/img/icons in color/telegram_logo_icon_147228.svg" alt="telegram">Baktybala в Telegram</a></li>
-                <li><a class="contacts__media-instagram" href="https://www.instagram.com/baktybala_/" target="_blank"><img class="social__instagram1" src="./assets/img/icons in color/icons8-instagram.svg" alt="instagram">Baktybala в Instagram</a></li>
-                <li><a class="contacts__media-whatsapp" href="https://api.whatsapp.com/send/?phone=77076156042" target="_blank"><img class="social__whatsapp1" src="./assets/img/icons in color/whatsapp_socialnetwork_17360.png" alt="whatsapp">Запись через Whatsapp</a></li>
+                <li class="contacts__media-telegram">Baktybala в Telegram</li>
+                <li class="contacts__media-instagram">Baktybala в Instagram</li>
+                <li class="contacts__media-whatsapp">Запись через Whatsapp</li>
             </ul>
         </div>
         <div class="contacts__email">
@@ -330,9 +369,9 @@
             <img class="contacts__right-picture" src="./assets/img/Photo_mountains.jpg" alt="">
         </!--div>-->
     <!--</div>-->
-    <div class="footercontainer wrapper">
+    <div class="footercontainer">
         <div class="footercontainer__copyright">
-            <p class="footercontainer__copyright-text1">©2023 Torgautova Baktybala Персональный сайт психолога. </p>
+            <p class="footercontainer__copyright-text1">©2023 Baktybala Персональный сайт психолога. </p>
             <p class="footercontainer__copyright-text2"> Копирование материалов сайта без разрешения правообладателя
                 запрещено. </p>
         </div>
@@ -344,7 +383,7 @@
                         target="_blank"><img class="social__whatsapp" src="./assets/img/ico/wtatsapp-icon.svg"
                             alt="whatsapp"></a></li>
                 <li><a class="footercontainer__media-icon" href="https://www.instagram.com/baktybala_/"
-                        target="_blank"><img class="social__instagram" src="./assets/img/ico/insta-icon.svg"
+                        target="_blank"></a><img class="social__instagram" src="./assets/img/ico/insta-icon.svg"
                         alt="instagram"></a></li>
                 <li><a class="footercontainer__media-icon"
                         href="https://www.youtube.com/channel/UCbUzwgNdhQ9DiFosSTzaGww/about" target="_blank"><img
@@ -352,7 +391,7 @@
             </ul>
         </div>
     </div>
-    <div class="bottom wrapper">
+    <div class="bottom">
         <p class="bottom__design"><a class="bottom__design-site" href="https://itgirlschool.com/"
                 target="_blank">WEBSITE BY ITGIRLS</a></p>
     </div>

@@ -61,35 +61,32 @@ p:focus,
 h2:hover,
 h2:focus {
   opacity: 0.8;
-  transition: 0.8s;
+  transition: 0.8s ease-out;
   transform: scale(1.03);
-}
-img:hover {
-  opacity: 0.8;
 }
 
 img:hover {
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 /* header styles (julia)*/
 .header {
   display: flex;
   flex-wrap: wrap;
-  height: 86px;
-  justify-content: space-around;
+  height: 90px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header__container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .header__left-part {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-right: 180px;
 }
 
 .header__logo {
@@ -142,6 +139,9 @@ img:hover {
 .header__right-part {
   display: flex;
   align-items: center;
+  display: flex;
+  align-items: center;
+  margin-right: 97px;
 }
 
 .header__icon {
@@ -215,7 +215,7 @@ img:hover {
   position: fixed;
   top: 0px;
   left: -100%;
-  width: 100%;
+  width: 400px;
   height: 100%;
   margin: 0;
   padding: 80px 0;
@@ -231,7 +231,7 @@ img:hover {
   padding: 12px 24px;
   color: rgb(68, 66, 66);
   font-family: "Montserrat", serif;
-  font-size: 40px;
+  font-size: 20px;
   font-weight: 400;
   text-decoration: none;
   text-align: center;
@@ -241,6 +241,42 @@ img:hover {
 
 .menu__item:hover {
   background-color: #f4f4f4;
+}
+
+.burger-link {
+  margin-left: 45%;
+}
+
+@media screen and (max-width: 680px) {
+  .header__right-part {
+    display: none;
+  }
+
+  .menu__box {
+    max-width: 200px;
+  }
+
+  .menu__item {
+    font-size: 30px;
+  }
+
+  .burger-link {
+    margin-left: 35%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .menu__box {
+    max-width: 120px;
+  }
+
+  .menu__item {
+    font-size: 17px;
+  }
+
+  .burger-link {
+    margin-left: 25%;
+  }
 }
 
 /*HERO PART ANASTASIA*/
@@ -256,7 +292,7 @@ img:hover {
   height: 700px;
   border-bottom: 1px solid #38383860;
   margin-bottom: 70px;
-  background-image: url(/assets/img/hands.jpg);
+  background-image: url(/project_psychology/assets/img/hands.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -427,6 +463,7 @@ img:hover {
 .about__title {
   display: flex;
   justify-content: center;
+  margin-top: 10%;
 }
 
 .about__title_education {
@@ -435,7 +472,7 @@ img:hover {
 }
 
 .about__image {
-  width: 310px;
+  width: 350px;
   height: 400px;
 }
 .about__article_title {
@@ -502,7 +539,7 @@ h3 {
 .about__citation p {
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 19px;
   line-height: 36px;
   font-family: "Montserrat", serif;
   color: #f4f4f4;
@@ -514,8 +551,8 @@ h3 {
   text-align: center;
   border-radius: 10px;
   padding: 5px;
-  width: 310px;
-  height: 180px;
+  width: 370px;
+  height: 150px;
   font-style: normal;
   font-weight: 380;
   font-size: 18px;
@@ -568,138 +605,107 @@ h3 {
   display: none;
 }
 
-@media screen and (max-width: 1300px) {
-  .about_education {
-    margin: 0;
-  }
-  .about__aside {
-    margin-right: 10px;
-  }
-  .about__article {
-    width: auto;
+.about__mobile_list {
+  display: none;
+}
+.about__mobile_content {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .about__body {
+    padding-left: 15px;
   }
 }
-@media screen and (max-width: 1150px) {
-  .about_education {
-    width: 499px;
-    margin-left: 0pxs;
-    font-size: smaller;
-  }
-  .about__article {
-    width: 550px;
-  }
-  .about {
-    margin-right: 50px;
-    margin-left: -20px;
-  }
-  .about__education_list {
-    margin-right: 60px;
-  }
-  .about__aside {
-    margin-left: 0px;
+
+@media screen and (max-width: 1199px) {
+  .about__body {
+    margin-left: 15px;
   }
 }
 
 @media screen and (max-width: 903px) {
+  .about__body {
+    height: max-content;
+  }
+  .about__education_title2 {
+    display: none;
+  }
+  .about__education {
+    display: none;
+  }
+  .about__target {
+    width: 410px;
+  }
+  .about__article {
+    align-items: flex-start;
+    margin-top: 20px;
+  }
   .about__content {
     display: flex;
     flex-direction: column;
   }
-  .about__aside {
-    margin-right: 50px;
-  }
-  .about__title {
-    margin-right: 15%;
-  }
-  .about__article {
-    max-width: 550px;
-  }
-  .about__target {
-    width: 550px;
-    height: 100px;
-  }
-  .about__education {
+  .about__mobile_list {
+    width: 480px;
     display: flex;
     flex-direction: column;
+    text-align: justify;
     align-items: center;
-    max-width: 550px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    font-family: "Montserrat", serif;
+    color: #4d4d4d;
   }
-
-  .about__image {
-    width: 550px;
-    height: 400px;
-  }
-
-  .about__citation {
-    width: 550px;
-    height: 150px;
-  }
-
-  .about__education_title2 {
-    display: none;
-  }
-  .about__education_list {
+  .mobile__wrapper {
     display: flex;
-    flex-direction: column;
-    margin-left: 50px;
-    width: 650px;
   }
-  .about__education_mobile {
+  .about__mobile_content {
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
   }
-}
 
-@media screen and (max-width: 500px) {
-  .about {
-    width: 100%;
-    margin-left: 70px;
-  }
-  .about__target {
-    margin-left: -80px;
-  }
-  .about__article {
-    margin-left: 30px;
-  }
-}
-@media screen and (max-width: 901px) {
   .about__body {
-    display: flex;
-    margin-left: 0;
-    width: 100%;
-  }
-  .about__title {
-    margin-right: 30%;
-  }
-
-  .about__education {
-    display: none;
-  }
-  .about__education_mobile {
-    margin-right: 30%;
-  }
-  .about__image {
-    width: 320px;
-    height: 200px;
-  }
-  .about__aside {
-    display: flex;
-    flex-direction: column;
-    padding-right: 60px;
-    font-size: smaller;
+    justify-content: center;
+    flex-direction: row;
   }
   .about__citation {
-    width: 320px;
     height: 150px;
-    font-size: smaller;
+    width: 410px;
   }
-
-  .about__target {
-    width: 320px;
-    height: 100px;
-    font-size: smaller;
-    display: none;
+  .about__title {
+    margin-right: 20px;
+  }
+  .about__image {
+    width: 400px;
+    height: 450px;
+  }
+}
+@media screen and (max-width: 467px) {
+  .about__article {
+    padding-left: 30px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .about__body {
+    padding-left: 40px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .about__aside {
+    padding-left: 30px;
+  }
+  .about__article {
+    padding-left: 30px;
+  }
+}
+.about__mobile_content {
+  padding-left: 20px;
+}
+@media screen and (max-width: 420px) {
+  .about__body {
+    margin-left: 130px;
   }
 }
 
@@ -707,46 +713,23 @@ h3 {
 
 /* ====Viddeo start (Julia)*/
 
-.video {
-  margin-bottom: 100px;
+.video__title {
+  text-align: center;
 }
 
 .video__container {
   display: flex;
-}
-
-.video__title {
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 60px;
-}
-
-.video__left-part {
-  display: block;
-  margin-right: 8px;
-}
-
-.video__content {
-  margin-bottom: 20px;
-}
-
-.video__right-part {
-  max-width: 700px;
-}
-
-.video__subtitle-content {
-  padding: 10px;
-  border: 1px solid #444242;
-  margin-top: 200px;
-  margin-bottom: 80px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  justify-content: space-between;
+  margin-bottom: 50px;
 }
 
 .video__subtitle {
+  margin-bottom: 50px;
+  padding: 10px;
+  border: 1px solid #444242;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -756,6 +739,8 @@ h3 {
 }
 
 .video__btn {
+  margin-left: 35%;
+  text-align: center;
   width: 300px;
   height: 100px;
   background-color: #4d4d4d90;
@@ -772,47 +757,10 @@ h3 {
 .video__btn:focus,
 .video__btn:active {
   opacity: 0.75;
+  transform: scale(1.03);
+  transition: 0.8s ease-out;
 }
 
-@media screen and (max-width: 780px) {
-  .video {
-    display: block;
-  }
-
-  .video__container {
-    display: block;
-  }
-
-  .video__title {
-    text-align: center;
-    margin-top: 70px;
-    margin-bottom: 30px;
-  }
-
-  .video__content {
-    margin: 10 auto;
-    text-align: center;
-  }
-
-  .video__subtitle-content {
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-
-  .video__btn {
-    margin: auto;
-  }
-
-  .video__form {
-    text-align: center;
-  }
-
-  .video__content {
-    width: 100%;
-    height: 350px;
-  }
-}
-/* ====Viddeo start (Julia)*/
 .video {
   margin-bottom: 100px;
 }
@@ -875,13 +823,7 @@ h3 {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.video__btn:hover,
-.video__btn:focus,
-.video__btn:active {
-  opacity: 0.75;
-}
-
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 1245px) {
   .video {
     display: block;
   }
@@ -916,9 +858,38 @@ h3 {
 
   .video__content {
     width: 100%;
-    height: 350px;
+    height: 100% auto;
   }
 }
+
+@media screen and (max-width: 615px) {
+  .video__content {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .video__btn {
+    width: 240px;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .video__content {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .video__btn {
+    width: 240px;
+  }
+}
+
 /*About guide Nadya start*/
 .about__guide {
   max-width: 1300px;
@@ -1009,10 +980,10 @@ h6 {
   list-style-type: none;
 }
 
-.contacts__right-picture {
+/*.contacts__right-picture {
   width: 100%;
   max-width: 900px;
-}
+}*/
 
 .contacts__email {
   display: flex;
@@ -1083,4 +1054,91 @@ h6 {
   justify-content: center;
 }
 
+@media screen and (min-width: 600px) and (max-width: 903px) {
+  .contacts__header-text {
+    font-size: 16px;
+  }
+  .contacts__email-img {
+    width: 30px;
+    height: 30px;
+    margin-right: 0.5%;
+  }
+
+  .contacts__media-telegram,
+  .contacts__media-instagram,
+  .contacts__media-whatsapp,
+  .contacts__email-send,
+  .bottom__design-site {
+    font-size: 14px;
+  }
+  .social__instagram1,
+  .social__telegram1,
+  .social__whatsapp1,
+  .social__whatsapp,
+  .social__telegram,
+  .social__instagram,
+  .social__youtube {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+  }
+  .footercontainer__copyright-text1,
+  .footercontainer__copyright-text2 {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .contacts__header-text {
+    font-size: 14px;
+  }
+  .contacts__email-img {
+    width: 30px;
+    height: 30px;
+    margin-right: 0.5%;
+  }
+  .contacts__media-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -15%;
+  }
+
+  .contacts__media-telegram,
+  .contacts__media-instagram,
+  .contacts__media-whatsapp,
+  .contacts__email-send,
+  .bottom__design-site {
+    font-size: 12px;
+  }
+  .social__instagram1,
+  .social__telegram1,
+  .social__whatsapp1,
+  .social__whatsapp,
+  .social__telegram,
+  .social__instagram,
+  .social__youtube {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+  }
+  .footercontainer__copyright-text1,
+  .footercontainer__copyright-text2 {
+    font-size: 12px;
+  }
+
+  .footercontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footercontainer__copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footercontainer__copyright-text2 {
+    text-align: center;
+  }
+}
 /*FOOTER PART MILA END*/
