@@ -1126,7 +1126,7 @@ h6 {
   justify-content: center;
 }
 
-@media screen and (min-width: 600px) and (max-width: 903px) {
+@media screen and (min-width:600px) and (max-width: 903px) {
   .contacts__header-text {
     font-size: 16px;
   }
@@ -1213,4 +1213,5 @@ h6 {
     text-align: center;
   }
 }
+
 /*FOOTER PART MILA END*/
