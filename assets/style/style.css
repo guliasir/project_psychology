@@ -74,8 +74,9 @@ img:hover {
 .header {
   display: flex;
   flex-wrap: wrap;
-  height: 53px;
+  height: 90px;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header__container {
@@ -232,7 +233,7 @@ img:hover {
   padding: 12px 24px;
   color: rgb(68, 66, 66);
   font-family: "Montserrat", serif;
-  font-size: 40px;
+  font-size: 20px;
   font-weight: 400;
   text-decoration: none;
   text-align: center;
@@ -244,12 +245,41 @@ img:hover {
   background-color: #f4f4f4;
 }
 
-@media screen and (max-width: 430px) {
+.burger-link {
+  margin-left: 45%;
+}
+
+@media screen and (max-width: 680px) {
   .header__right-part {
     display: none;
   }
+
+  .menu__box {
+    max-width: 200px;
+  }
+
+  .menu__item {
+    font-size: 30px;
+  }
+
+  .burger-link {
+    margin-left: 35%;
+  }
 }
 
+@media screen and (max-width: 430px) {
+  .menu__box {
+    max-width: 120px;
+  }
+
+  .menu__item {
+    font-size: 17px;
+  }
+
+  .burger-link {
+    margin-left: 25%;
+  }
+}
 
 /*HERO PART ANASTASIA*/
 
@@ -666,6 +696,7 @@ padding-left: 40px;
 
 /*About me PART Gulya end*/
 
+
 /* ====Viddeo start (Julia)*/
 
 .video__title {
@@ -816,21 +847,8 @@ padding-left: 40px;
   .video__content {
     width: 100%;
     height: 100% auto;
-
-}}
-
-@media screen and (max-width: 615px) {
-  .video__content {
-    width: 100%;
-    height: auto;
-    max-height: 100%;
   }
 }
-
-@media screen and (max-width: 325px) {
-  .video__btn {
-    width: 240px;
-}}
 
 @media screen and (max-width: 615px) {
   .video__content {
@@ -844,8 +862,23 @@ padding-left: 40px;
   .video__btn {
     width: 240px;
   }
-
 }
+
+@media screen and (max-width: 615px) {
+  .video__content {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .video__btn {
+    width: 240px;
+  }
+}
+
+ 
 /*About guide Nadya start*/
 .about__guide {
   max-width: 1300px;
