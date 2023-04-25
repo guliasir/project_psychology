@@ -237,7 +237,7 @@ img:hover {
   }
 
   .menu__item {
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .burger-link {
@@ -247,7 +247,7 @@ img:hover {
 
 @media screen and (max-width: 430px) {
   .menu__box {
-    max-width: 150px;
+    max-width: 170px;
   }
 
   .menu__item {
