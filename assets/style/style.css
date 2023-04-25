@@ -60,9 +60,8 @@ p:hover,
 p:focus,
 h2:hover,
 h2:focus {
+  color: #121212;
   opacity: 0.8;
-  transition: 0.8s ease-out;
-  transform: scale(1.03);
 }
 
 img:hover {
@@ -158,7 +157,7 @@ img:hover {
 }
 
 #menu__toggle {
-  opacity: 0.1;
+  opacity: 0;
 }
 
 #menu__toggle:checked + .menu__btn > span {
@@ -286,13 +285,10 @@ img:hover {
   flex-direction: row;
   justify-content: center;
   max-width: 100%;
-  border-bottom: 1px solid #38383860;
-  margin-bottom: 70px;
-  max-width: 100%;
   height: 700px;
   border-bottom: 1px solid #38383860;
   margin-bottom: 70px;
-  background-image: url(/./assets/img/hands.jpg);
+  background-image: url(../img/hands_final.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -354,6 +350,7 @@ img:hover {
     width: 100%;
     height: 100%;
   }
+
   .hero__title {
     margin-left: 0px;
   }
@@ -370,6 +367,7 @@ img:hover {
     flex-direction: column;
     align-items: center;
   }
+
   .hero__title {
     margin-left: 0px;
     margin-top: 100px;
@@ -422,7 +420,7 @@ img:hover {
   line-height: 36px;
   font-family: "Montserrat", serif;
   color: #f4f4f4;
-  background-color: #4d4d4d90;
+  background-color: #4d4d4d70;
 }
 
 .Myjob__citation p {
@@ -464,9 +462,36 @@ img:hover {
   .Myjob__photo {
     margin-left: 0;
   }
+
   .Myjob__citation {
     align-self: center;
     width: 500px;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Myjob__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Myjob__left {
+    max-width: 450px;
+    margin-bottom: 32px;
+    margin-right: 0;
+  }
+
+  .Myjob__photo {
+    width: 100%;
+    max-width: 400px;
+    margin-left: 0;
+  }
+
+  .Myjob__citation {
+    align-self: center;
+    width: 350px;
     margin-right: 0;
   }
 }
@@ -475,6 +500,7 @@ img:hover {
   width: 100%;
   border-bottom: 1px solid #38383860;
 }
+
 /*MYJOB PART ANASTASIA ENDS*/
 
 /*About me PART Gulya start*/
@@ -502,10 +528,12 @@ img:hover {
   height: 400px;
   margin-top: 30px;
 }
+
 .about__article_title {
   display: flex;
   align-content: flex-end;
 }
+
 .about__content {
   display: flex;
   align-items: flex-start;
@@ -519,6 +547,7 @@ h2 {
   font-family: "Montserrat", serif;
   color: #4d4d4d;
 }
+
 h3 {
   font-style: normal;
   font-weight: 700;
@@ -527,6 +556,7 @@ h3 {
   font-family: "Montserrat", serif;
   color: #4d4d4d;
 }
+
 .about__article {
   display: flex;
   flex-direction: column-reverse;
@@ -571,6 +601,7 @@ h3 {
   font-family: "Montserrat", serif;
   color: #f4f4f4;
 }
+
 .about__citation {
   display: flex;
   flex-direction: column;
@@ -608,6 +639,7 @@ h3 {
   color: #4d4d4d;
   margin-top: 30px;
 }
+
 .about__education_title2 {
   font-style: normal;
   font-weight: 400;
@@ -626,6 +658,7 @@ h3 {
 .about__aside {
   margin-right: 70px;
 }
+
 .about__education_mobile {
   display: none;
 }
@@ -633,6 +666,7 @@ h3 {
 .about__mobile_list {
   display: none;
 }
+
 .about__mobile_content {
   display: none;
 }
@@ -644,11 +678,13 @@ h3 {
     padding: 5px;
     padding-right: 32px;
   }
+
   .about__citation {
     height: 150px;
     width: 600px;
   }
 }
+
 @media screen and (max-width: 1010px) {
   .about__body {
     margin: 0 auto;
@@ -657,6 +693,7 @@ h3 {
     padding-right: 32px;
   }
 }
+
 .about__citation {
   height: 150px;
   width: 550px;
@@ -667,25 +704,31 @@ h3 {
     height: max-content;
     display: flex;
   }
+
   .about__education_title2 {
     display: none;
   }
+
   .about__education {
     display: none;
   }
+
   .about__target {
     width: 320px;
     height: 150;
   }
+
   .about__article {
     align-items: flex-start;
     margin-top: 20px;
   }
+
   .about__content {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
   }
+
   .about__mobile_list {
     width: 480px;
     display: flex;
@@ -699,9 +742,11 @@ h3 {
     font-family: "Montserrat", serif;
     color: #4d4d4d;
   }
+
   .mobile__wrapper {
     display: flex;
   }
+
   .about__mobile_content {
     display: flex;
     justify-content: center;
@@ -711,6 +756,7 @@ h3 {
     justify-content: center;
     flex-direction: row;
   }
+
   .about__citation {
     height: 150px;
     width: 410px;
@@ -719,12 +765,14 @@ h3 {
   .about__title {
     margin-right: 20px;
   }
+
   .about__aside {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     margin-right: 10px;
   }
+
   .about__citation {
     height: 190px;
     width: 320px;
@@ -736,38 +784,76 @@ h3 {
   .about__body {
     max-width: 500px;
   }
+
   .about__content {
     min-width: 500px;
   }
+
   .about__citation {
     height: 150px;
     width: 400px;
     margin-right: 10px;
   }
+
   .about__target {
     width: 400px;
     height: 100px;
   }
+
   .about__aside {
     display: flex;
     align-items: center;
     flex-direction: column;
   }
 }
-@media screen and (max-width: 450px) {
+
+@media screen and (max-width: 500px) {
   .about__aside {
-    padding-left: 10px;
+    padding-right: 50px;
   }
-  .about__article {
-    padding-left: 10px;
-  }
-}
-.about__mobile_content {
-  padding-left: 10px;
-}
-@media screen and (max-width: 420px) {
   .about__body {
-    margin-left: 80px;
+    margin-right: 90px;
+  }
+
+  .about__article {
+    padding-right: 50px;
+  }
+
+  .about__target {
+    width: 320px;
+    height: 100px;
+  }
+  .about__mobile_content {
+    padding-right: 30px;
+  }
+  .about__citation {
+    width: 320px;
+    height: 190px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .about__body {
+    margin-left: 0px;
+  }
+  .about__citation {
+    width: 320px;
+    height: 190px;
+  }
+  .about__aside {
+    padding-right: 0px;
+  }
+  .about__body {
+    padding-right: 70px;
+  }
+  .about__mobile_content {
+    padding-left: 10px;
+    margin-right: 15px;
+    padding-right: 0;
+  }
+
+  .about__article {
+    padding-right: 0px;
   }
 }
 
@@ -967,8 +1053,64 @@ h3 {
 
 /*About me PART Gulya end*/
 
+/*About guide Nadya start*/
+.about__guide {
+  max-width: 1300px;
+  margin: 0 auto;
+  margin: 20px auto;
+  padding: 5px;
+  text-align: center;
+  border-radius: 10px;
+  font-family: "Montserrat", serif;
+  color: #f4f4f4;
+  background-color: #5b554b90;
+  text-decoration: none;
+  background-color: #5b554b90;
+}
+
+.link__patreon {
+  text-align: end;
+}
+
+.link__patreon a {
+  text-decoration: none;
+  color: #4d4d4d;
+  font-size: 36px;
+}
+
+.link__patreon a:hover {
+  text-decoration: underline;
+  color: #3d3b3b;
+}
+
+@media screen and (max-width: 1290px) {
+  .about__guide {
+    margin: 0 10px;
+    text-align: center;
+  }
+
+  .h3 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  h3 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  h3 {
+    font-size: 15px;
+  }
+}
+
+/*About guide Nadya end*/
+
 /*About reviews Nadya start*/
 .container {
+  max-width: 1300px;
   margin-bottom: 40px;
   font-family: "Montserrat", serif;
   color: #4d4d4d;
@@ -983,7 +1125,8 @@ h3 {
   line-height: 28px;
 }
 
-.reviews__top,
+.reviews__top-1,
+.reviews__top-2,
 .reviews__bottom {
   display: flex;
   margin: 10px;
@@ -997,6 +1140,7 @@ h3 {
   margin: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
+  font-family: "Montserrat", cursive;
 }
 
 h5,
@@ -1006,8 +1150,21 @@ h6 {
   margin: 10px;
 }
 
-/*About reviews Nadya end*/
+@media screen and (max-width: 1000px) {
+  .reviews__top-1 {
+    display: block;
+  }
 
+  .reviews__top-2 {
+    display: block;
+  }
+
+  .reviews__bottom {
+    display: block;
+  }
+}
+
+/*About reviews Nadya end*/
 /*FOOTER PART MILA*/
 .contacts {
   display: flex;
@@ -1119,6 +1276,7 @@ h6 {
   .contacts__header-text {
     font-size: 16px;
   }
+
   .contacts__email-img {
     width: 30px;
     height: 30px;
@@ -1132,6 +1290,7 @@ h6 {
   .bottom__design-site {
     font-size: 14px;
   }
+
   .social__instagram1,
   .social__telegram1,
   .social__whatsapp1,
@@ -1143,6 +1302,7 @@ h6 {
     height: 40px;
     padding: 10px;
   }
+
   .footercontainer__copyright-text1,
   .footercontainer__copyright-text2 {
     font-size: 12px;
@@ -1153,11 +1313,13 @@ h6 {
   .contacts__header-text {
     font-size: 14px;
   }
+
   .contacts__email-img {
     width: 30px;
     height: 30px;
     margin-right: 0.5%;
   }
+
   .contacts__media-list {
     display: flex;
     flex-direction: column;
@@ -1172,6 +1334,7 @@ h6 {
   .bottom__design-site {
     font-size: 12px;
   }
+
   .social__instagram1,
   .social__telegram1,
   .social__whatsapp1,
@@ -1183,6 +1346,7 @@ h6 {
     height: 40px;
     padding: 8px;
   }
+
   .footercontainer__copyright-text1,
   .footercontainer__copyright-text2 {
     font-size: 12px;
@@ -1193,11 +1357,13 @@ h6 {
     flex-direction: column;
     align-items: center;
   }
+
   .footercontainer__copyright {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   .footercontainer__copyright-text2 {
     text-align: center;
   }
