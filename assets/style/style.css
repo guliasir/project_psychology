@@ -824,13 +824,16 @@ h3 {
   border: 1px solid #444242;
   text-align: center;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px rgba(99, 99, 99, 0.1);
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
   font-family: "Montserrat", serif;
-  color: #4d4d4d;
+}
+
+.video__subtitle:hover {
+  color: black;
 }
 
 .video__btn {
@@ -845,7 +848,7 @@ h3 {
   border: 1px solid #404040;
   cursor: pointer;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px rgba(254, 248, 248, 0.1);
 }
 
 .video__btn:hover,
@@ -903,7 +906,12 @@ h3 {
   font-size: 20px;
   line-height: 28px;
   font-family: "Montserrat", serif;
-  color: #4d4d4d;
+  color: #878787;
+  margin-bottom: 90px;
+}
+
+.video__subtitle:hover {
+  color: black;
 }
 
 .video__btn {
