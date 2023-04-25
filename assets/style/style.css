@@ -288,7 +288,7 @@ img:hover {
   height: 700px;
   border-bottom: 1px solid #38383860;
   margin-bottom: 70px;
-  background-image: url(/assets/img/hands.jpg);
+  background-image: url(/./assets/img/hands_final.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -484,6 +484,7 @@ img:hover {
   }
 
   .Myjob__photo {
+    width: 100%;
     max-width: 400px;
     margin-left: 0;
   }
