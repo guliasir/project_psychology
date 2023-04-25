@@ -160,21 +160,21 @@ img:hover {
   opacity: 0;
 }
 
-#menu__toggle:checked+.menu__btn>span {
+#menu__toggle:checked + .menu__btn > span {
   transform: rotate(45deg);
 }
 
-#menu__toggle:checked+.menu__btn>span::before {
+#menu__toggle:checked + .menu__btn > span::before {
   top: 0;
   transform: rotate(0deg);
 }
 
-#menu__toggle:checked+.menu__btn>span::after {
+#menu__toggle:checked + .menu__btn > span::after {
   top: 0;
   transform: rotate(90deg);
 }
 
-#menu__toggle:checked~.menu__box {
+#menu__toggle:checked ~ .menu__box {
   left: 0 !important;
 }
 
@@ -188,9 +188,9 @@ img:hover {
   z-index: 11;
 }
 
-.menu__btn>span,
-.menu__btn>span::before,
-.menu__btn>span::after {
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
   display: block;
   position: absolute;
   width: 100%;
@@ -199,12 +199,12 @@ img:hover {
   transition-duration: 0.25s;
 }
 
-.menu__btn>span::before {
+.menu__btn > span::before {
   content: "";
   top: -7px;
 }
 
-.menu__btn>span::after {
+.menu__btn > span::after {
   content: "";
   top: 7px;
 }
@@ -284,9 +284,6 @@ img:hover {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  max-width: 100%;
-  border-bottom: 1px solid #38383860;
-  margin-bottom: 70px;
   max-width: 100%;
   height: 700px;
   border-bottom: 1px solid #38383860;
@@ -423,7 +420,7 @@ img:hover {
   line-height: 36px;
   font-family: "Montserrat", serif;
   color: #f4f4f4;
-  background-color: #4d4d4d90;
+  background-color: #4d4d4d70;
 }
 
 .Myjob__citation p {
@@ -469,6 +466,31 @@ img:hover {
   .Myjob__citation {
     align-self: center;
     width: 500px;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Myjob__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Myjob__left {
+    max-width: 450px;
+    margin-bottom: 32px;
+    margin-right: 0;
+  }
+
+  .Myjob__photo {
+    max-width: 400px;
+    margin-left: 0;
+  }
+
+  .Myjob__citation {
+    align-self: center;
+    width: 350px;
     margin-right: 0;
   }
 }
@@ -796,28 +818,26 @@ h3 {
     padding-right: 50px;
   }
 
-
-.about__target {
-  width: 320px;
-  height: 100px;
+  .about__target {
+    width: 320px;
+    height: 100px;
+  }
+  .about__mobile_content {
+    padding-right: 30px;
+  }
+  .about__citation {
+    width: 320px;
+    height: 190px;
+  }
 }
-.about__mobile_content {
-  padding-right: 30px;
-}
-.about__citation {
-  width: 320px;
-  height: 190px;
-
-}}
 
 @media screen and (max-width: 400px) {
   .about__body {
     margin-left: 0px;
   }
   .about__citation {
-      width: 320px;
-      height: 190px;
-    
+    width: 320px;
+    height: 190px;
   }
   .about__aside {
     padding-right: 0px;
@@ -835,7 +855,6 @@ h3 {
     padding-right: 0px;
   }
 }
-
 
 /*About me PART Gulya end*/
 
@@ -1058,35 +1077,33 @@ h3 {
   font-size: 36px;
 }
 
-a:hover {
+.link__patreon a:hover {
   text-decoration: underline;
   color: #3d3b3b;
 }
 
 @media screen and (max-width: 1290px) {
   .about__guide {
-      margin: 0 10px;
-      text-align: center;
+    margin: 0 10px;
+    text-align: center;
   }
 
   .h3 {
-      font-size: 24px;
+    font-size: 24px;
   }
 }
 
-
 @media screen and (max-width: 1023px) {
   h3 {
-      font-size: 20px;
+    font-size: 20px;
   }
 }
 
 @media screen and (max-width: 767px) {
   h3 {
-      font-size: 15px;
+    font-size: 15px;
   }
 }
-
 
 /*About guide Nadya end*/
 
@@ -1132,18 +1149,17 @@ h6 {
   margin: 10px;
 }
 
-
 @media screen and (max-width: 1000px) {
   .reviews__top-1 {
-      display: block;
+    display: block;
   }
 
   .reviews__top-2 {
-      display: block;
+    display: block;
   }
 
   .reviews__bottom {
-      display: block;
+    display: block;
   }
 }
 
