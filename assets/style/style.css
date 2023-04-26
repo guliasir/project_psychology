@@ -141,21 +141,21 @@ img:hover {
   opacity: 0;
 }
 
-#menu__toggle:checked + .menu__btn > span {
+#menu__toggle:checked+.menu__btn>span {
   transform: rotate(45deg);
 }
 
-#menu__toggle:checked + .menu__btn > span::before {
+#menu__toggle:checked+.menu__btn>span::before {
   top: 0;
   transform: rotate(0deg);
 }
 
-#menu__toggle:checked + .menu__btn > span::after {
+#menu__toggle:checked+.menu__btn>span::after {
   top: 0;
   transform: rotate(90deg);
 }
 
-#menu__toggle:checked ~ .menu__box {
+#menu__toggle:checked~.menu__box {
   left: 0 !important;
 }
 
@@ -169,9 +169,9 @@ img:hover {
   z-index: 11;
 }
 
-.menu__btn > span,
-.menu__btn > span::before,
-.menu__btn > span::after {
+.menu__btn>span,
+.menu__btn>span::before,
+.menu__btn>span::after {
   display: block;
   position: absolute;
   width: 100%;
@@ -180,12 +180,12 @@ img:hover {
   transition-duration: 0.25s;
 }
 
-.menu__btn > span::before {
+.menu__btn>span::before {
   content: "";
   top: -7px;
 }
 
-.menu__btn > span::after {
+.menu__btn>span::after {
   content: "";
   top: 7px;
 }
@@ -211,7 +211,7 @@ img:hover {
   padding: 12px 24px;
   color: rgb(68, 66, 66);
   font-family: "Montserrat", serif;
-  font-size: 20px;
+  font-size: 28px;
   font-weight: 400;
   text-decoration: none;
   text-align: center;
@@ -237,7 +237,7 @@ img:hover {
   }
 
   .menu__item {
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .burger-link {
@@ -247,7 +247,7 @@ img:hover {
 
 @media screen and (max-width: 430px) {
   .menu__box {
-    max-width: 120px;
+    max-width: 170px;
   }
 
   .menu__item {
@@ -255,7 +255,7 @@ img:hover {
   }
 
   .burger-link {
-    margin-left: 25%;
+    margin-left: 30%;
   }
 }
 
@@ -855,13 +855,16 @@ h3 {
   border: 1px solid #444242;
   text-align: center;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px rgba(99, 99, 99, 0.1);
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
   font-family: "Montserrat", serif;
-  color: #4d4d4d;
+}
+
+.video__subtitle:hover {
+  color: black;
 }
 
 .video__btn {
@@ -876,7 +879,7 @@ h3 {
   border: 1px solid #404040;
   cursor: pointer;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px rgba(254, 248, 248, 0.1);
 }
 
 .video__btn:hover,
@@ -934,7 +937,12 @@ h3 {
   font-size: 20px;
   line-height: 28px;
   font-family: "Montserrat", serif;
-  color: #4d4d4d;
+  color: #878787;
+  margin-bottom: 90px;
+}
+
+.video__subtitle:hover {
+  color: black;
 }
 
 .video__btn {
