@@ -19,7 +19,7 @@ h1 {
   font-size: 30px;
   line-height: 28px;
   font-family: "Montserrat", serif;
-  color: #4d4d4d;
+  color: #000000;
 }
 
 p {
@@ -41,8 +41,8 @@ p:hover,
 p:focus,
 h2:hover,
 h2:focus {
-  color: #121212;
-  opacity: 0.8;
+  color: #282828;
+  opacity: 0.7;
 }
 
 img:hover {
@@ -524,7 +524,7 @@ h2 {
   font-size: 30px;
   line-height: 28px;
   font-family: "Montserrat", serif;
-  color: #4d4d4d;
+  color: #000000;
 }
 
 h3 {
@@ -533,7 +533,7 @@ h3 {
   font-size: 30px;
   line-height: 28px;
   font-family: "Montserrat", serif;
-  color: #4d4d4d;
+  color: #000000;
 }
 
 .about__article {
@@ -912,7 +912,6 @@ h3 {
 
 .video__content {
   margin-bottom: 20px;
-  opacity: 0.8;
   filter: grayscale(100%);
 }
 
