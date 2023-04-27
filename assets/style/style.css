@@ -1,6 +1,5 @@
 html {
   box-sizing: border-box;
-  box-sizing: border-box;
 }
 
 *,
@@ -8,22 +7,13 @@ html {
 *::after {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
 }
 
 body {
   background: #f4f4f4;
-  background: #f4f4f4;
 }
 
 h1 {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 28px;
-  font-family: "Montserrat", serif;
-  color: #000000;
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
@@ -39,18 +29,9 @@ p {
   line-height: 28px;
   font-family: "Montserrat", serif;
   color: #4d4d4d;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 28px;
-  font-family: "Montserrat", serif;
-  color: #4d4d4d;
 }
 
 .wrapper {
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: 0 15px;
   max-width: 1300px;
   margin: 0 auto;
   padding: 0 15px;
@@ -416,8 +397,10 @@ img:hover {
   font-size: 20px;
   line-height: 36px;
   font-family: "Montserrat", serif;
-  color: #f4f4f4;
-  background-color: #4d4d4d70;
+  color: #303030;
+  background-color: transparent;
+  border: 1px solid black;
+  box-shadow: 0 0 5px rgba(99, 99, 99, 0.1);
 }
 
 .Myjob__citation p {
@@ -427,7 +410,7 @@ img:hover {
   font-size: 20px;
   line-height: 36px;
   font-family: "Montserrat", serif;
-  color: #f4f4f4;
+  color: #2a2929;
 }
 
 .Myjob__photo {
