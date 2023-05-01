@@ -859,10 +859,6 @@ h3 {
   margin-bottom: 300px;
 }
 
-.video__title {
-  text-align: center;
-}
-
 .video__container {
   display: flex;
   justify-content: space-between;
@@ -887,35 +883,12 @@ h3 {
   color: black;
 }
 
-.video__btn {
-  margin-left: 35%;
-  text-align: center;
-  width: 300px;
-  height: 100px;
-  background-color: #4d4d4d90;
-  color: #fffbfb;
-  font-family: "Montserrat", serif;
-  font-size: 18px;
-  border: 1px solid #404040;
-  cursor: pointer;
-  border-radius: 10px;
-  box-shadow: 0 0 5px rgba(254, 248, 248, 0.1);
-}
-
 .video__btn:hover,
 .video__btn:focus,
 .video__btn:active {
   opacity: 0.75;
   transform: scale(1.03);
   transition: 0.8s ease-out;
-}
-
-.video {
-  margin-bottom: 100px;
-}
-
-.video__container {
-  display: flex;
 }
 
 .video__title {
@@ -934,28 +907,19 @@ h3 {
   filter: grayscale(100%);
 }
 
-.video__right-part {
-  max-width: 700px;
-}
-
-.video__subtitle-content {
-  padding: 10px;
-  border: 1px solid #444242;
-  margin-top: 200px;
-  margin-bottom: 80px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
 
 .video__subtitle {
+  padding: 10px;
+  border: 1px solid #444242;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(99, 99, 99, 0.1);
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
   font-family: "Montserrat", serif;
+  font-style: normal;
   color: #2b2a2a;
   margin-bottom: 90px;
 }
@@ -965,11 +929,12 @@ h3 {
 }
 
 .video__btn {
-  width: 300px;
-  height: 100px;
+  margin-left: 45%;
+  width: 150px;
+  height: 50px;
   background-color: transparent;
   color: #000000;
-  font-size: 25px;
+  font-size: 17px;
   border: 1px solid #404040;
   cursor: pointer;
   border-radius: 10px;
@@ -993,17 +958,18 @@ h3 {
   }
 
   .video__content {
-    margin: 10;
+    margin-bottom: 10px;
     text-align: center;
   }
 
-  .video__subtitle-content {
+  .video__subtitle {
     margin-top: 30px;
     margin-bottom: 30px;
   }
 
   .video__btn {
     margin: auto;
+    margin-bottom: 20px;
   }
 
   .video__form {
@@ -1027,7 +993,7 @@ h3 {
 
 @media screen and (max-width: 325px) {
   .video__btn {
-    width: 240px;
+    width: 100px;
   }
 }
 
@@ -1041,7 +1007,7 @@ h3 {
 
 @media screen and (max-width: 325px) {
   .video__btn {
-    width: 240px;
+    width: 100px;
   }
 }
 
