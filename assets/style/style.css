@@ -472,6 +472,7 @@ img:hover {
 .border {
   width: 100%;
   border-bottom: 1px solid #38383860;
+  margin-bottom: 40px;
 }
 
 /*MYJOB PART ANASTASIA ENDS*/
@@ -488,7 +489,6 @@ img:hover {
 .about__title {
   display: flex;
   justify-content: center;
-  margin-top: 10%;
 }
 
 .about__title_education {
@@ -853,7 +853,7 @@ h3 {
 .video__container {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 
 .video__subtitle {
@@ -884,7 +884,6 @@ h3 {
 
 .video__title {
   text-align: center;
-  margin-top: 50px;
   margin-bottom: 60px;
 }
 
