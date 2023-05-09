@@ -397,14 +397,15 @@ img:hover {
 
 .Myjob__citation p {
   margin: 0;
-  font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 36px;
   font-family: "Montserrat", serif;
   color: #2a2929;
 }
-
+.Myjob__citation-italic {
+  font-style: italic;
+}
 .Myjob__photo {
   max-width: 500px;
 }
@@ -464,8 +465,16 @@ img:hover {
 
   .Myjob__citation {
     align-self: center;
-    width: 350px;
+    width: 450px;
     margin-right: 0;
+    border: none;
+  }
+
+  .Myjob__citation-italic {
+    font-style: italic;
+  }
+  .Myjob__citation p {
+    font-size: 12px;
   }
 }
 
@@ -739,6 +748,7 @@ h3 {
   .about__citation {
     height: 150px;
     width: 410px;
+    margin-top: 0;
   }
 
   .about__title {
@@ -772,6 +782,7 @@ h3 {
     height: 150px;
     width: 400px;
     margin-right: 10px;
+    margin-top: 0;
   }
 
   .about__target {
@@ -811,6 +822,7 @@ h3 {
   .about__citation {
     width: 320px;
     height: 190px;
+    margin-top: 0;
   }
 }
 
@@ -822,6 +834,7 @@ h3 {
   .about__citation {
     width: 320px;
     height: 190px;
+    margin-top: 0;
   }
 
   .about__aside {
