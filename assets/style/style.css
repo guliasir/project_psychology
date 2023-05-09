@@ -866,7 +866,7 @@ h3 {
     margin-right: 15px;
     padding-right: 0;
   }
-  
+
   .about__target {
     border: none;
   }
@@ -1017,7 +1017,11 @@ h3 {
     max-height: auto;
     height: 100%;
   }
+  .video__subtitle {
+    font-size: 16px;
+  
 }
+
 
 @media screen and (max-width: 464px) {
   .video__content {
