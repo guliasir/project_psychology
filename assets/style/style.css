@@ -1176,11 +1176,6 @@ h6 {
   list-style-type: none;
 }
 
-/*.contacts__right-picture {
-  width: 100%;
-  max-width: 900px;
-}*/
-
 .contacts__email {
   display: flex;
   justify-content: center;
