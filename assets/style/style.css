@@ -403,9 +403,11 @@ img:hover {
   font-family: "Montserrat", serif;
   color: #2a2929;
 }
+
 .Myjob__citation-italic {
   font-style: italic;
 }
+
 .Myjob__photo {
   max-width: 500px;
 }
@@ -443,6 +445,7 @@ img:hover {
     margin-right: 0;
     border: none;
   }
+
   .Myjob__citation p {
     font-size: 16px;
   }
@@ -477,6 +480,7 @@ img:hover {
   .Myjob__citation-italic {
     font-style: italic;
   }
+
   .Myjob__citation p {
     font-size: 12px;
   }
@@ -710,6 +714,7 @@ h3 {
     height: 150;
     border: none;
   }
+
   .about__target p {
     font-size: 16px;
   }
@@ -798,6 +803,7 @@ h3 {
     height: 100px;
     border: none;
   }
+
   .about__target p {
     font-size: 16px;
   }
@@ -827,6 +833,7 @@ h3 {
     height: 100px;
     border: none;
   }
+
   .about__target p {
     font-size: 12px;
   }
@@ -1017,22 +1024,24 @@ h3 {
     max-height: auto;
     height: 100%;
   }
+
   .video__subtitle {
     font-size: 16px;
-  
-}
 
-
-@media screen and (max-width: 464px) {
-  .video__content {
-    width: 100%;
-    min-height: 150px;
-    max-height: auto;
-    height: 100%;
   }
 
-  .video__btn {
-    width: 150px;
+
+  @media screen and (max-width: 464px) {
+    .video__content {
+      width: 100%;
+      min-height: 150px;
+      max-height: auto;
+      height: 100%;
+    }
+
+    .video__btn {
+      width: 150px;
+    }
   }
 }
 
@@ -1290,6 +1299,7 @@ h6 {
   .footercontainer__copyright-text2 {
     font-size: 12px;
   }
+
   .contacts__email-h {
     margin-left: 2%;
   }
@@ -1352,9 +1362,11 @@ h6 {
   .footercontainer__copyright-text2 {
     text-align: center;
   }
+
   .contacts__email-h {
     margin-left: 2%;
   }
 }
 }
+
 /*FOOTER PART MILA END*/
